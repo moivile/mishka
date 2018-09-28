@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктор Моисеев](https://up.htmlacademy.ru/adaptive/15/user/623139).
-* Наставник: [Денис Байдаров] (https://htmlacademy.ru/profile/4er).
+* Наставник: [Денис Байдаров] (<https://htmlacademy.ru/profile/4er>).
 
 ---
 
