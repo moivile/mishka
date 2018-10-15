@@ -1,1 +1,10 @@
-body { background: blue; }
+@import "mixins.scss";
+@import "variables.scss";
+@import "blocks\page-header.scss";
+@import "blocks\page-main.scss";
+@import "blocks\page-footer.scss";
+
+
+body {
+  background-color: #ffffff;
+}
