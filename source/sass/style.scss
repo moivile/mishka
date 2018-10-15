@@ -1,10 +1,21 @@
 @import "mixins.scss";
 @import "variables.scss";
-@import "blocks\page-header.scss";
-@import "blocks\page-main.scss";
-@import "blocks\page-footer.scss";
-
 
 body {
+  color: #000000;
   background-color: #ffffff;
 }
+
+@import "blocks/button.scss";
+@import "blocks/visually-hidden.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/catalog-links.scss";
+@import "blocks/week-product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/comments.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
