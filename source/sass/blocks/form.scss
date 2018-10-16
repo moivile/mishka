@@ -18,9 +18,7 @@
 }
 
 .form__option-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .form__footnote {
