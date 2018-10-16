@@ -1,0 +1,9 @@
+.text-area {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.text-area::placeholder {
+  opacity: 0.3;
+}
