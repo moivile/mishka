@@ -1,4 +1,3 @@
-@import "mixins.scss";
 @import "variables.scss";
 
 body {
@@ -12,9 +11,15 @@ body {
   color: $font-dark-black;
   font-style: normal;
 
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import "mixins.scss";
 @import "blocks/button.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";

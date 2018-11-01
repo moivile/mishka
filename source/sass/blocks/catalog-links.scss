@@ -1,12 +1,12 @@
 .catalog-links {
   font-size: 19px;
-  color: #ffffff;
+  color: $font-white;
 }
 
 .catalog-links__list-item--interior-features {
-  background-color: #63d1bb;
+  background-color: $bg-light-aquamarine;
 }
 
 .catalog-links__list-item--toys {
-  background-color: #56c3b2;
+  background-color: $bg-dark-aquamarine;
 }
