@@ -5,3 +5,15 @@
 .main-nav__func-list {
   @include reset-list;
 }
+
+.main-nav__aditional-site-list {
+  @include reset-list;
+  font-size: 15px;
+  display: none;
+}
+
+.main-nav__free-delivery {
+  font-size: 15px;
+  font-weight: 400;
+  display: none;
+}

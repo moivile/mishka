@@ -11,19 +11,27 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
-    </a>
-    <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">
-      <span class="visually-hidden">Открыть-закрыть меню</span>
-    </button>
     <nav class="main-nav">
+      <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">
+        <span class="visually-hidden">Открыть-закрыть меню</span>
+      </button>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+      </a>
       <ul class="main-nav__site-list">
         <li class="main-nav__site-list-item">
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__site-list-item">
           <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__aditional-site-list">
+        <li class="main-nav__site-list-item main-nav__site-list-item--desktop">
+          <a href="catalog.html">Новые поступления</a>
+        </li>
+        <li class="main-nav__site-list-item main-nav__site-list-item--desktop">
+          <a href="form.html">Распродажа</a>
         </li>
       </ul>
       <ul class="main-nav__func-list">
@@ -34,6 +42,7 @@
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
+      <span class="main-nav__free-delivery">Бесплатная доставка по России</span>
     </nav>
   </header>
   <main class="page-main">
