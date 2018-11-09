@@ -1,3 +1,8 @@
+.main-nav {
+  /* Временно для сетки */
+  min-height: 395px;
+}
+
 .main-nav__site-list {
   @include reset-list;
 }
@@ -17,3 +22,21 @@
   font-weight: 400;
   display: none;
 }
+
+
+@media(max-width: $tablet-width) {
+  .main-nav {
+    width: $mobile-width;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 150px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {}
