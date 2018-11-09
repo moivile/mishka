@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 body {
-  min-width: 320px;
+  min-width: $mobile-width;
   margin: 0;
   padding: 0;
 

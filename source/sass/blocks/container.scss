@@ -1,19 +1,19 @@
 .container {
-  width: 260px;
-  padding: 0 30px;
+  width: $mobile-container-width;
+  padding: 0 ($mobile-width - $mobile-container-width)/2;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
     width: 668px;
-    padding: 0 50px;
+    padding: 0 ($tablet-width - $tablet-container-width)/2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1050px;
-    padding: 0 50px;
+    padding: 0 ($desktop-width - $desktop-container-width)/2;
   }
 }
