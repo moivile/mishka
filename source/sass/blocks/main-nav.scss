@@ -1,13 +1,14 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   /* Временно для сетки */
   min-height: 395px;
 }
 
 .main-nav__logo {
-  height: 78px;
+  width: 86px;
+  height: 35px;
+  margin: 21px auto;
 }
 
 .main-nav__site-list {
@@ -50,13 +51,16 @@
   .main-nav {
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     /* Временно для сетки */
     min-height: 150px;
   }
 
   .main-nav__logo {
-    width: 220px;
-    height: 88px;
+    width: 112px;
+    height: 46px;
+    margin: 0;
+    margin-right: auto;
   }
 
   .main-nav__func-list {
@@ -69,6 +73,7 @@
   .main-nav__site-list {
     order: 2;
     width: 320px;
+    margin-right: auto;
     /* Временно для сетки */
     min-height: 62px;
   }
@@ -87,10 +92,15 @@
   .main-nav__site-list {
     order: 0;
     width: 410px;
+    margin-right: 40px;
+    /* Временно для сетки */
+    min-height: 88px;
   }
 
   .main-nav__logo {
     order: 1;
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__func-list {
@@ -101,5 +111,8 @@
     display: block;
     width: 410px;
     order: 3;
+    margin-right: auto;
+    /* Временно для сетки */
+    min-height: 62px;
   }
 }
