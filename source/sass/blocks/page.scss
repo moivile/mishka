@@ -1,0 +1,23 @@
+.page__main-heading {
+  margin: 0;
+  border-top: 1px solid #f7f7f7;
+  font-size: 27px;
+  line-height: 30px;
+  /* Временно для сетки */
+  min-height: 282px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page__header {
+    margin-bottom: -62px;
+  }
+
+  .page__main-heading {
+    /* Временно для сетки */
+    min-height: 626px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {}
