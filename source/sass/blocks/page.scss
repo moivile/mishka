@@ -1,14 +1,36 @@
+.page {
+  min-width: $mobile-width;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: $font-dark-black;
+  font-weight: 700;
+  font-style: normal;
+
+  background-color: $bg-white;
+}
+
 .page__main-heading {
   margin: 0;
   border-top: 1px solid #f7f7f7;
   font-size: 27px;
   line-height: 30px;
+  background-color: #f9f9f9;
   /* Временно для сетки */
   min-height: 282px;
+  background-color: transparent;
 }
 
 
 @media (min-width: $tablet-width) {
+
+  .page__container {
+    width: 668px;
+    padding: 0 ($tablet-width - $tablet-container-width)/2;
+  }
+
   .page__header {
     margin-bottom: -62px;
   }
@@ -20,4 +42,9 @@
 }
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .page__container {
+    width: 1050px;
+    padding: 0 ($desktop-width - $desktop-container-width)/2;
+  }
+}

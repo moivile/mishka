@@ -4,12 +4,14 @@
   margin: 0 auto;
 }
 
+
 @media (min-width: $tablet-width) {
   .container {
     width: 668px;
     padding: 0 ($tablet-width - $tablet-container-width)/2;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .container {
