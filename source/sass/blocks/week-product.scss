@@ -1,8 +1,23 @@
 .week-product {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 42px;
   color: $font-light-black;
+  /* Временно для сетки */
+  // min-height: 752px;
+}
+
+.week-product__header {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 27px;
+  /* Временно для сетки */
+  min-height: 52px;
 }
 
 .week-product__heading {
+  margin: 0;
   line-height: 20px;
   color: $font-light-aquamarine;
 }
@@ -13,12 +28,37 @@
 }
 
 .week-product__description {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 15px;
   font-weight: 400;
+  /* Временно для сетки */
+  min-height: 69px;
 }
 
 .week-product__features {
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
+  /* Временно для сетки */
+  min-height: 108px;
+}
+
+.week-product__image {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 26px;
+}
+
+.week-product__price {
+  margin: 0;
+  margin-bottom: 23px;
+  /* Временно для сетки */
+  min-height: 24px;
+}
+
+.week-product__order-button {
+  /* Временно для сетки */
+  min-height: 52px;
 }
