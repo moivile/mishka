@@ -36,3 +36,11 @@
     min-height: 131px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .catalog-links__list {
+    /* Временно для сетки */
+    min-height: 136px;
+  }
+}
