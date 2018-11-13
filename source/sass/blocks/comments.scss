@@ -1,10 +1,23 @@
+.comments {
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 54px;
+}
+
 .comments__heading {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 25px;
   line-height: 30px;
+  /* Временно для сетки */
+  min-height: 30px;
 }
 
 .comments__list {
   @include reset-list;
+  margin-bottom: 32px;
+  /* Временно для сетки */
+  min-height: 350px;
 }
 
 .comments__text {
@@ -16,4 +29,50 @@
 .comments__author-nick {
   line-height: 30px;
   font-weight: 400;
+}
+
+.comments__scroll-buttons {
+  margin-bottom: 38px;
+  height: 52px;
+}
+
+.comments__write-comment {
+  /* Временно для сетки */
+  min-height: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    padding-top: 79px;
+    padding-bottom: 132px;
+  }
+
+  .comments__heading {
+    margin-bottom: 53px;
+    /* Временно для сетки */
+    min-height: 50px;
+  }
+
+  .comments__list {
+    margin-bottom: 0;
+    /* Временно для сетки */
+    min-height: 230px;
+  }
+
+  .comments__scroll-buttons {
+    position: absolute;
+    right: 68px;
+    margin-top: -45px;
+    width: 137px;
+    height: 26px;
+  }
+
+  .comments__write-comment {
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    width: 175px;
+    /* Временно для сетки */
+    min-height: 52px;
+  }
 }

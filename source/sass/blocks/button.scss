@@ -1,4 +1,6 @@
 .button {
+  display: block;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
   color: $font-light-black;
