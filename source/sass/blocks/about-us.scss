@@ -1,6 +1,14 @@
+.about-us {
+  padding-top: 30px;
+}
+
 .about-us__heading {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 25px;
   line-height: 30px;
+  /* Временно для сетки */
+  min-height: 30px;
 }
 
 .about-us__list {
@@ -9,4 +17,56 @@
 
 .about-us__list-item {
   line-height: 20px;
+  /* Временно для сетки */
+  min-height: 124px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
+
+  .about-us__heading {
+    margin-bottom: 43px;
+    /* Временно для сетки */
+    min-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__list-item {
+    width: 334px;
+    line-height: 20px;
+    /* Временно для сетки */
+    min-height: 160px;
+  }
+
+  .about-us__list-item--eco {
+    order: 1;
+  }
+
+  .about-us__list-item--class {
+    order: 3;
+  }
+
+  .about-us__list-item--likes {
+    order: 5;
+  }
+
+  .about-us__list-item--with-love {
+    order: 2;
+  }
+
+  .about-us__list-item--domestic {
+    order: 4;
+  }
+
+  .about-us__list-item--gift-wrap {
+    order: 6;
+  }
 }
