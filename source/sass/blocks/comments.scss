@@ -76,3 +76,21 @@
     min-height: 52px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comments {
+    padding-bottom: 189px;
+    padding-left: 225px;
+  }
+
+  .comments__heading {
+    margin-bottom: 45px;
+    /* Временно для сетки */
+    min-height: 57px;
+  }
+
+  .comments__list {
+    /* Временно для сетки */
+    min-height: 180px;
+  }
+}
