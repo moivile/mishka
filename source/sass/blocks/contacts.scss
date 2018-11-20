@@ -1,65 +1,101 @@
 .contacts {
-    padding-top: 35px;
-    padding-bottom: 39px;
+  padding-top: 35px;
+  padding-bottom: 39px;
 }
 
 .contacts__heading {
-    margin: 0;
-    margin-bottom: 25px;
-    font-size: 18px;
-    line-height: 30px;
-    /* Временно для сетки */
-    min-height: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  /* Временно для сетки */
+  min-height: 30px;
 }
 
 .contacts__list {
-    @include reset-list;
-    margin-bottom: 34px;
-    font-size: 15px;
-    line-height: 30px;
-    color: $font-light-black;
-    font-weight: 400;
-    /* Временно для сетки */
-    min-height: 180px;
+  @include reset-list;
+  margin-bottom: 34px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $font-light-black;
+  font-weight: 400;
+  /* Временно для сетки */
+  min-height: 180px;
 }
 
 .contacts__map {
-    margin-bottom: 39px;
-    margin-left: -$mobile-container-padding;
-    width: $mobile-width;
-    height: 457px;
+  margin-bottom: 39px;
+  margin-left: -$mobile-container-padding;
+  width: $mobile-width;
+  height: 457px;
 }
 
 .contacts__write-to-us {
-    /* Временно для сетки */
-    min-height: 52px;
+  /* Временно для сетки */
+  min-height: 52px;
 }
 
 @media (min-width: $tablet-width) {
-    .contacts {
-        padding-top: 67px;
-        padding-bottom: 57px;
-    }
-    .contacts__heading {
-        margin-bottom: 45px;
-        /* Временно для сетки */
-        min-height: 50px;
-    }
-    .contacts__list {
-        margin-bottom: 52px;
-        /* Временно для сетки */
-        min-height: 90px;
-    }
-    .contacts__map {
-        margin-bottom: 55px;
-        margin-left: -$tablet-container-padding;
-        width: $tablet-width;
-        height: 457px;
-    }
-    .contacts__write-to-us {
-        width: 230px;
-        margin: 0 auto;
-        /* Временно для сетки */
-        min-height: 52px;
-    }
+  .contacts {
+    padding-top: 67px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__heading {
+    margin-bottom: 45px;
+    /* Временно для сетки */
+    min-height: 50px;
+  }
+
+  .contacts__list {
+    margin-bottom: 50px;
+    /* Временно для сетки */
+    min-height: 90px;
+  }
+
+  .contacts__map {
+    margin-bottom: 55px;
+    margin-left: -$tablet-container-padding;
+    width: $tablet-width;
+    height: 457px;
+  }
+
+  .contacts__write-to-us {
+    width: 230px;
+    margin: 0 auto;
+    /* Временно для сетки */
+    min-height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 148px;
+    padding-bottom: 105px;
+    padding-left: 225px;
+  }
+
+  .contacts__heading {
+    margin-bottom: 43px;
+    /* Временно для сетки */
+    min-height: 57px;
+  }
+
+  .contacts__list {
+    margin-bottom: 75px;
+    /* Временно для сетки */
+    min-height: 150px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 68px;
+    right: $desktop-container-padding;
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__write-to-us {
+    margin-left: 0;
+  }
 }
