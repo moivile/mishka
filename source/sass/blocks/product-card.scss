@@ -8,3 +8,33 @@
 .product-card__price {
   font-size: 15px;
 }
+
+.product-card {
+  /* Временно для сетки */
+  min-height: 374px;
+}
+
+
+/* Временно для сетки */
+@media (max-width: $tablet-width) {
+
+  /* Временно для сетки */
+  .product-card:last-child {
+    min-height: 399px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    /* Временно для сетки */
+    min-height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 316px;
+    /* Временно для сетки */
+    min-height: 659px;
+  }
+}
