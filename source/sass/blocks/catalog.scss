@@ -3,8 +3,6 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-direction: column;
   @include reset-list;
 }
 
@@ -31,7 +29,7 @@
   }
 
   .catalog__list {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     margin-left: -51px;
   }
