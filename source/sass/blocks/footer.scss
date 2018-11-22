@@ -2,7 +2,7 @@
   background-color: $bg-light-gray;
 }
 
-.footer__wrapper {
+.footer__container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer__wrapper {
+  .footer__container {
     flex-direction: row;
     min-height: 143px;
   }
