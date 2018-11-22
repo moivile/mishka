@@ -1,8 +1,8 @@
 .production-process {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
-  padding-bottom: 32px;
+  width: $mobile-width - 2*$mobile-container-padding;
+  padding: 25px 33px 32px 33px;
 }
 
 .production-process__heading {
@@ -13,6 +13,7 @@
 }
 
 .production-process__video-container {
+  margin-left: -33px;
   margin-bottom: 29px;
 }
 
@@ -26,7 +27,27 @@
   min-height: 120px;
 }
 
-.production-process__basket-button {
-  width: 192px;
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .production-process {
+    width: $tablet-width - 2*$tablet-container-padding;
+    padding: 0 41px 45px 41px;
+  }
+
+  .production-process__video-container {
+    order: -1;
+    margin-bottom: 38px;
+    margin-left: -41px;
+  }
+
+  .production-process__heading {
+    margin-bottom: 34px;
+    /* Временно для сетки */
+    min-height: 24px;
+  }
+
+  .production-process__description {
+    margin-bottom: 33px;
+    /* Временно для сетки */
+    min-height: 60px;
+  }
 }
