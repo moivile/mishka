@@ -87,21 +87,21 @@ body>*>*>*>*>*::before {
 }
 
 
-body {
+.page--index {
   background: url("../img/mishka-index-mobile.png") no-repeat 50% 0;
   min-height: 4248px;
 }
 
 
 @media (min-width: $tablet-width) {
-  body {
+  .page--index {
     background: url("../img/mishka-index-tablet.png") no-repeat 50% 0;
     min-height: 3710px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
+  .page--index {
     background: url("../img/mishka-index-desktop.png") no-repeat 50% 0;
     min-height: 3623px;
   }
