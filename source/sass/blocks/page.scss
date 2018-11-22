@@ -19,8 +19,18 @@
   line-height: 30px;
   background-color: #f9f9f9;
   /* Временно для сетки */
-  min-height: 282px;
   background-color: transparent;
+}
+
+
+.page--index .page__main-heading {
+  /* Временно для сетки */
+  min-height: 282px;
+}
+
+.page--catalog .page__main-heading {
+  /* Временно для сетки */
+  min-height: 176px;
 }
 
 
@@ -30,11 +40,22 @@
     margin-bottom: -62px;
   }
 
-  .page__main-heading {
+  .page--index .page__main-heading {
     /* Временно для сетки */
     min-height: 626px;
   }
+  .page--catalog .page__main-heading {
+    /* Временно для сетки */
+    min-height: 238px;
+  }
+
 }
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .page--catalog .page__main-heading {
+    /* Временно для сетки */
+    min-height: 272px;
+  }
+}
