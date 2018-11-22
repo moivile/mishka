@@ -1,8 +1,10 @@
 .button {
   display: block;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 20px;
   color: $font-light-black;
   text-transform: uppercase;
+  /* Временно для сетки */
+  min-height: 52px;
 }
