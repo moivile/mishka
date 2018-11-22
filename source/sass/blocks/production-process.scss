@@ -1,5 +1,32 @@
+.production-process {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+
+.production-process__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  /* Временно для сетки */
+  min-height: 48px;
+}
+
+.production-process__video-container {
+  margin-bottom: 29px;
+}
+
 .production-process__description {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 13px;
   color: $font-light-black;
   font-weight: 400;
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
+.production-process__basket-button {
+  width: 192px;
+  margin: 0 auto;
 }

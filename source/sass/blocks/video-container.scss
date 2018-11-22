@@ -1,0 +1,18 @@
+.video-container {
+  width: 260px;
+  height: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-container {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-container {
+    width: 682px;
+    height: 455px;
+  }
+}
