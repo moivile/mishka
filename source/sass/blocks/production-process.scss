@@ -51,3 +51,30 @@
     min-height: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .production-process {
+    width: $desktop-width - 2*$desktop-container-padding;
+    padding: 46px 56px 59px 762px;
+  }
+
+  .production-process__video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .production-process__heading {
+    margin-bottom: 36px;
+    /* Временно для сетки */
+    min-height: 100px;
+  }
+
+  .production-process__description {
+    margin-bottom: 40px;
+    /* Временно для сетки */
+    min-height: 120px;
+  }
+
+}
