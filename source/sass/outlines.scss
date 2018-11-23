@@ -97,6 +97,12 @@ body>*>*>*>*>*::before {
   min-height: 2560px;
 }
 
+.page--form {
+  background: url("../img/mishka-form-mobile.png") no-repeat 50% 0;
+  min-height: 2360px;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .page--index {
@@ -107,6 +113,11 @@ body>*>*>*>*>*::before {
   .page--catalog {
     background: url("../img/mishka-catalog-tablet.png") no-repeat 50% 0;
     min-height: 2505px;
+  }
+
+  .page--form {
+    background: url("../img/mishka-form-tablet.png") no-repeat 50% 0;
+    min-height: 2007px;
   }
 }
 
@@ -119,5 +130,10 @@ body>*>*>*>*>*::before {
   .page--catalog {
     background: url("../img/mishka-catalog-desktop.png") no-repeat 50% 0;
     min-height: 1890px;
+  }
+
+  .page--form {
+    background: url("../img/mishka-form-desktop.png") no-repeat 50% 0;
+    min-height: 2004px;
   }
 }
