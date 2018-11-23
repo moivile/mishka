@@ -33,6 +33,10 @@
   min-height: 176px;
 }
 
+.page__production-process {
+  margin-bottom: 58px;
+}
+
 
 @media (min-width: $tablet-width) {
 
@@ -44,9 +48,14 @@
     /* Временно для сетки */
     min-height: 626px;
   }
+
   .page--catalog .page__main-heading {
     /* Временно для сетки */
     min-height: 238px;
+  }
+
+  .page__production-process {
+    margin-bottom: 63px;
   }
 
 }
@@ -57,5 +66,9 @@
   .page--catalog .page__main-heading {
     /* Временно для сетки */
     min-height: 272px;
+  }
+
+  .page__production-process {
+    margin-bottom: 105px;
   }
 }
