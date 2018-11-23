@@ -28,7 +28,7 @@
   min-height: 282px;
 }
 
-.page--catalog .page__main-heading {
+.page--inner .page__main-heading {
   /* Временно для сетки */
   min-height: 176px;
 }
@@ -49,7 +49,7 @@
     min-height: 626px;
   }
 
-  .page--catalog .page__main-heading {
+  .page--inner .page__main-heading {
     /* Временно для сетки */
     min-height: 238px;
   }
@@ -63,7 +63,7 @@
 
 @media (min-width: $desktop-width) {
 
-  .page--catalog .page__main-heading {
+  .page--inner .page__main-heading {
     /* Временно для сетки */
     min-height: 272px;
   }
