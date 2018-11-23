@@ -1,7 +1,15 @@
+.form {
+  padding-top: 24px;
+  padding-bottom: 55px;
+}
+
 .form__description {
+  margin-bottom: 24px;
   font-size: 13px;
   color: $font-light-black;
   font-weight: 400;
+  /* Временно для сетки */
+  min-height: 95px;
 }
 
 .form__field-set {
@@ -25,4 +33,27 @@
   line-height: 16px;
   color: $font-light-black;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-top: 62px;
+    padding-bottom: 50px;
+  }
+
+  .form__description {
+    margin-bottom: 55px;
+    /* Временно для сетки */
+    min-height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 106px;
+  }
+
+  .form__description {
+    padding: 0 $desktop-container-padding + 175px;
+  }
 }
