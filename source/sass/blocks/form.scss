@@ -4,7 +4,7 @@
 }
 
 .form__description {
-  margin-bottom: 24px;
+  margin-bottom: 9px;
   font-size: 13px;
   color: $font-light-black;
   font-weight: 400;
@@ -13,19 +13,32 @@
 }
 
 .form__field-set {
-  padding: 0;
   margin: 0;
+  padding: 15px 0;
   border: none;
 }
 
 .form__legend {
+  margin-bottom: 25px;
   line-height: 16px;
   color: $font-light-aquamarine;
   text-transform: uppercase;
+  /* Временно для сетки */
+  min-height: 16px;
 }
 
 .form__option-list {
   @include reset-list;
+}
+
+.form__option-list--product-type {
+  /* Временно для сетки */
+  min-height: 100px;
+}
+
+.form__option-list--color {
+  /* Временно для сетки */
+  min-height: 344px;
 }
 
 .form__footnote {
