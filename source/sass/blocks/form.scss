@@ -27,16 +27,16 @@
   min-height: 16px;
 }
 
-.form__option-list {
+.form__field-set-content {
   @include reset-list;
 }
 
-.form__option-list--product-type {
+.form__field-set-content--product-type {
   /* Временно для сетки */
   min-height: 100px;
 }
 
-.form__option-list--color {
+.form__field-set-content--color {
   /* Временно для сетки */
   min-height: 344px;
 }
@@ -76,16 +76,16 @@
     margin-top: 20px;
   }
 
-  .form__option-list {
+  .form__field-set-content {
     width: 501px;
   }
 
-  .form__option-list--product-type {
+  .form__field-set-content--product-type {
     /* Временно для сетки */
     min-height: 128px;
   }
 
-  .form__option-list--color {
+  .form__field-set-content--color {
     /* Временно для сетки */
     min-height: 204px;
   }
@@ -104,11 +104,11 @@
     margin-left: 62px;
   }
 
-  .form__option-list {
+  .form__field-set-content {
     width: 875px;
   }
 
-  .form__option-list--color {
+  .form__field-set-content--color {
     /* Временно для сетки */
     min-height: 128px;
   }
