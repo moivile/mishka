@@ -4,7 +4,7 @@
 }
 
 .form__description {
-  margin-bottom: 9px;
+  margin-bottom: 6px;
   font-size: 13px;
   color: $font-light-black;
   font-weight: 400;
@@ -14,17 +14,17 @@
 
 .form__field-set {
   margin: 0;
-  padding: 15px 0;
+  padding: 17px 0;
   border: none;
 }
 
 .form__legend {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   line-height: 16px;
   color: $font-light-aquamarine;
   text-transform: uppercase;
   /* Временно для сетки */
-  min-height: 16px;
+  min-height: 17px;
 }
 
 .form__field-set-content {
@@ -39,6 +39,26 @@
 .form__field-set-content--color {
   /* Временно для сетки */
   min-height: 344px;
+}
+
+.form__field-set-content--full-name {
+  /* Временно для сетки */
+  min-height: 265px;
+}
+
+.form__field-set-content--phone {
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.form__field-set-content--email {
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.form__field-set-content--info {
+  /* Временно для сетки */
+  min-height: 144px;
 }
 
 .form__footnote {
@@ -62,6 +82,10 @@
 
   .form__field-set {
     padding: 50px 0;
+  }
+
+  .form__field-set--phone {
+    margin-bottom: -76px;
   }
 
   .form__field-set-container {
@@ -89,6 +113,21 @@
     /* Временно для сетки */
     min-height: 204px;
   }
+
+  .form__field-set-content--full-name {
+    /* Временно для сетки */
+    min-height: 205px;
+  }
+
+  .form__field-set-content--phone {
+    /* Временно для сетки */
+    min-height: 52px;
+  }
+
+  .form__field-set-content--email {
+    /* Временно для сетки */
+    min-height: 52px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -105,10 +144,13 @@
   }
 
   .form__field-set-content {
-    width: 875px;
+    width: 700px;
+    margin-right: 175px;
   }
 
   .form__field-set-content--color {
+    width: 875px;
+    margin-right: 0;
     /* Временно для сетки */
     min-height: 128px;
   }
