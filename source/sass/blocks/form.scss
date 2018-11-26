@@ -13,10 +13,18 @@
 }
 
 .form__footnote {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   color: $font-light-black;
   font-weight: 400;
+  /* Временно для сетки */
+  min-height: 16px;
+}
+
+.form__submit-button {
+  width: $mobile-width - 2*$mobile-container-padding;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +42,22 @@
   .form__field-set-phone {
     margin-bottom: -76px;
   }
+
+  .form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .form__footnote {
+    width: 310px;
+    margin: 0;
+    text-align: right;
+  }
+
+  .form__submit-button {
+    width: 230px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -43,5 +67,9 @@
 
   .form__description {
     padding: 0 $desktop-container-padding + 175px;
+  }
+
+  .form__footer {
+    padding: 0 225px;
   }
 }
