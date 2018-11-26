@@ -1,0 +1,117 @@
+.field-set {
+  margin: 0;
+  padding: 17px 0;
+  border: none;
+}
+
+.field-set__legend {
+  margin-bottom: 20px;
+  line-height: 16px;
+  color: $font-light-aquamarine;
+  text-transform: uppercase;
+  /* Временно для сетки */
+  min-height: 17px;
+}
+
+.field-set__content {
+  @include reset-list;
+}
+
+.field-set__content--product-type {
+  /* Временно для сетки */
+  min-height: 100px;
+}
+
+.field-set__content--color {
+  /* Временно для сетки */
+  min-height: 344px;
+}
+
+.field-set__content--full-name {
+  /* Временно для сетки */
+  min-height: 265px;
+}
+
+.field-set__content--phone {
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.field-set__content--email {
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.field-set__content--info {
+  /* Временно для сетки */
+  min-height: 144px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-set {
+    padding: 50px 0;
+  }
+
+  .field-set--phone {
+    margin-bottom: -76px;
+  }
+
+  .field-set__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .field-set__legend {
+    width: 80px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .field-set__content {
+    width: 501px;
+  }
+
+  .field-set__content--product-type {
+    /* Временно для сетки */
+    min-height: 128px;
+  }
+
+  .field-set__content--color {
+    /* Временно для сетки */
+    min-height: 204px;
+  }
+
+  .field-set__content--full-name {
+    /* Временно для сетки */
+    min-height: 205px;
+  }
+
+  .field-set__content--phone {
+    /* Временно для сетки */
+    min-height: 52px;
+  }
+
+  .field-set__content--email {
+    /* Временно для сетки */
+    min-height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-set__legend {
+    margin-left: 62px;
+  }
+
+  .field-set__content {
+    width: 700px;
+    margin-right: 175px;
+  }
+
+  .field-set__content--color {
+    width: 875px;
+    margin-right: 0;
+    /* Временно для сетки */
+    min-height: 128px;
+  }
+}
