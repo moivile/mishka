@@ -71,7 +71,7 @@
   }
 
   .form__legend {
-    width: 100px;
+    width: 80px;
     margin: 0;
     margin-top: 20px;
   }
@@ -98,5 +98,18 @@
 
   .form__description {
     padding: 0 $desktop-container-padding + 175px;
+  }
+
+  .form__legend {
+    margin-left: 62px;
+  }
+
+  .form__option-list {
+    width: 875px;
+  }
+
+  .form__option-list--color {
+    /* Временно для сетки */
+    min-height: 128px;
   }
 }
