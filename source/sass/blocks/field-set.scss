@@ -52,6 +52,12 @@
     padding: 50px 0;
   }
 
+  .field-set--bg-gray {
+    background: $bg-light-gray;
+    /* Временно для сетки */
+    background: transparent;
+  }
+
   .field-set__container {
     display: flex;
     align-items: flex-start;
