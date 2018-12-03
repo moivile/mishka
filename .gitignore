@@ -8,8 +8,6 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/style.css
+source/css/*.css
 Thumbs.db
-source/css/pixel-glass.css
 source/js/pixel-glass.js
-source/css/normalize.css
