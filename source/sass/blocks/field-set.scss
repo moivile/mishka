@@ -9,42 +9,10 @@
   line-height: 16px;
   color: $font-light-aquamarine;
   text-transform: uppercase;
-  /* Временно для сетки */
-  min-height: 17px;
 }
 
 .field-set__content {
   @include reset-list;
-}
-
-.field-set__content--product-type {
-  /* Временно для сетки */
-  min-height: 100px;
-}
-
-.field-set__content--color {
-  /* Временно для сетки */
-  min-height: 344px;
-}
-
-.field-set__content--full-name {
-  /* Временно для сетки */
-  min-height: 265px;
-}
-
-.field-set__content--phone {
-  /* Временно для сетки */
-  min-height: 36px;
-}
-
-.field-set__content--email {
-  /* Временно для сетки */
-  min-height: 36px;
-}
-
-.field-set__content--info {
-  /* Временно для сетки */
-  min-height: 144px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,8 +22,6 @@
 
   .field-set--bg-gray {
     background: $bg-light-gray;
-    /* Временно для сетки */
-    background: transparent;
   }
 
   .field-set__container {
@@ -73,31 +39,6 @@
   .field-set__content {
     width: 501px;
   }
-
-  .field-set__content--product-type {
-    /* Временно для сетки */
-    min-height: 128px;
-  }
-
-  .field-set__content--color {
-    /* Временно для сетки */
-    min-height: 204px;
-  }
-
-  .field-set__content--full-name {
-    /* Временно для сетки */
-    min-height: 205px;
-  }
-
-  .field-set__content--phone {
-    /* Временно для сетки */
-    min-height: 52px;
-  }
-
-  .field-set__content--email {
-    /* Временно для сетки */
-    min-height: 52px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -113,7 +54,5 @@
   .field-set__content--color {
     width: 875px;
     margin-right: 0;
-    /* Временно для сетки */
-    min-height: 128px;
   }
 }
