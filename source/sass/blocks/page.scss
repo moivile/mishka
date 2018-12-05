@@ -18,19 +18,6 @@
   font-size: 27px;
   line-height: 30px;
   background-color: #f9f9f9;
-  /* Временно для сетки */
-  background-color: transparent;
-}
-
-
-.page__main-heading {
-  /* Временно для сетки */
-  min-height: 282px;
-}
-
-.page--inner .page__main-heading {
-  /* Временно для сетки */
-  min-height: 176px;
 }
 
 .page__production-process {
@@ -44,16 +31,6 @@
     margin-bottom: -62px;
   }
 
-  .page__main-heading {
-    /* Временно для сетки */
-    min-height: 626px;
-  }
-
-  .page--inner .page__main-heading {
-    /* Временно для сетки */
-    min-height: 238px;
-  }
-
   .page__production-process {
     margin-bottom: 63px;
   }
@@ -62,12 +39,6 @@
 
 
 @media (min-width: $desktop-width) {
-
-  .page--inner .page__main-heading {
-    /* Временно для сетки */
-    min-height: 272px;
-  }
-
   .page__production-process {
     margin-bottom: 105px;
   }

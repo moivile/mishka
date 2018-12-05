@@ -7,8 +7,6 @@
   margin-bottom: 28px;
   font-size: 25px;
   line-height: 30px;
-  /* Временно для сетки */
-  min-height: 30px;
 }
 
 .about-us__list {
@@ -17,8 +15,6 @@
 
 .about-us__list-item {
   line-height: 20px;
-  /* Временно для сетки */
-  min-height: 124px;
 }
 
 
@@ -30,8 +26,6 @@
 
   .about-us__heading {
     margin-bottom: 43px;
-    /* Временно для сетки */
-    min-height: 50px;
   }
 
   .about-us__list {
@@ -42,8 +36,6 @@
   .about-us__list-item {
     width: 334px;
     line-height: 20px;
-    /* Временно для сетки */
-    min-height: 159px;
   }
 
   .about-us__list-item--eco {
@@ -81,7 +73,5 @@
 
   .about-us__heading {
     margin-bottom: 41px;
-    /* Временно для сетки */
-    min-height: 60px;
   }
 }

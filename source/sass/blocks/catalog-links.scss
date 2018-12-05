@@ -2,16 +2,12 @@
   font-size: 19px;
   color: $font-white;
   background-color: #f9f9f9;
-  /* Временно для сетки */
-  background-color: transparent;
 }
 
 .catalog-links__list {
   display: flex;
   flex-direction: column;
   list-style: none;
-  /* Временно для сетки */
-  min-height: 206px;
 }
 
 .catalog-links__list-item--interior-features {
@@ -32,15 +28,8 @@
 @media (min-width: $tablet-width) {
   .catalog-links__list {
     flex-direction: row;
-    /* Временно для сетки */
-    min-height: 131px;
   }
 }
 
 
-@media (min-width: $desktop-width) {
-  .catalog-links__list {
-    /* Временно для сетки */
-    min-height: 136px;
-  }
-}
+@media (min-width: $desktop-width) {}

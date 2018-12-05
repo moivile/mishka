@@ -8,8 +8,6 @@
   font-size: 13px;
   color: $font-light-black;
   font-weight: 400;
-  /* Временно для сетки */
-  min-height: 95px;
 }
 
 .form__footnote {
@@ -19,8 +17,6 @@
   line-height: 16px;
   color: $font-light-black;
   font-weight: 400;
-  /* Временно для сетки */
-  min-height: 16px;
 }
 
 .form__submit-button {
@@ -35,8 +31,6 @@
 
   .form__description {
     margin-bottom: 4px;
-    /* Временно для сетки */
-    min-height: 59px;
   }
 
   .form__field-set-phone {

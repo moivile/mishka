@@ -8,8 +8,6 @@
 .production-process__heading {
   margin: 0;
   margin-bottom: 24px;
-  /* Временно для сетки */
-  min-height: 48px;
 }
 
 .production-process__video-container {
@@ -23,8 +21,6 @@
   font-size: 13px;
   color: $font-light-black;
   font-weight: 400;
-  /* Временно для сетки */
-  min-height: 120px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,14 +37,10 @@
 
   .production-process__heading {
     margin-bottom: 34px;
-    /* Временно для сетки */
-    min-height: 24px;
   }
 
   .production-process__description {
     margin-bottom: 33px;
-    /* Временно для сетки */
-    min-height: 60px;
   }
 }
 
@@ -67,14 +59,10 @@
 
   .production-process__heading {
     margin-bottom: 36px;
-    /* Временно для сетки */
-    min-height: 100px;
   }
 
   .production-process__description {
     margin-bottom: 40px;
-    /* Временно для сетки */
-    min-height: 120px;
   }
 
 }

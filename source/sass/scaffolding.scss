@@ -15,8 +15,6 @@ img {
   color: $font-light-black;
   text-transform: uppercase;
   text-align: center;
-  /* Временно для сетки */
-  min-height: 52px;
 }
 
 .visually-hidden:not(:focus):not(:active),

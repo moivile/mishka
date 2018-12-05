@@ -1,8 +1,6 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  /* Временно для сетки */
-  min-height: 395px;
 }
 
 .main-nav__logo {
@@ -13,14 +11,10 @@
 
 .main-nav__site-list {
   @include reset-list;
-  /* Временно для сетки */
-  min-height: 158px;
 }
 
 .main-nav__func-list {
   @include reset-list;
-  /* Временно для сетки */
-  min-height: 158px;
 }
 
 .main-nav__extra-site-list {
@@ -51,8 +45,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    /* Временно для сетки */
-    min-height: 150px;
   }
 
   .main-nav__logo {
@@ -65,24 +57,18 @@
   .main-nav__func-list {
     order: 1;
     width: 348px;
-    /* Временно для сетки */
-    min-height: 88px;
   }
 
   .main-nav__site-list {
     order: 2;
     width: 320px;
     margin-right: auto;
-    /* Временно для сетки */
-    min-height: 62px;
   }
 
   .main-nav__free-delivery {
     display: block;
     order: 4;
     width: 260px;
-    /* Временно для сетки */
-    min-height: 62px;
   }
 }
 
@@ -92,8 +78,6 @@
     order: 0;
     width: 410px;
     margin-right: 40px;
-    /* Временно для сетки */
-    min-height: 88px;
   }
 
   .main-nav__logo {
@@ -111,7 +95,5 @@
     width: 410px;
     order: 3;
     margin-right: auto;
-    /* Временно для сетки */
-    min-height: 62px;
   }
 }
