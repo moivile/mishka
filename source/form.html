@@ -40,72 +40,141 @@
 <body class="page page--inner">
   <header class="page__header">
     <nav class="main-nav container">
+      <button class="main-nav__menu-toggle main-nav__menu-toggle--close" type="button">
+        <span class="visually-hidden">Открыть-закрыть меню</span>
+      </button>
       <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
       </a>
       <ul class="main-nav__site-list">
+        <li class="main-nav__site-list-item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__site-list-item">
+          <a>Вязание на заказ</a>
+        </li>
       </ul>
       <ul class="main-nav__extra-site-list">
+        <li class="main-nav__extra-site-list-item">
+          <a href="catalog.html">Новые поступления</a>
+        </li>
+        <li class="main-nav__extra-site-list-item">
+          <a href="form.html">Распродажа</a>
+        </li>
       </ul>
       <ul class="main-nav__func-list">
+        <li class="main-nav__func-list-item main-nav__func-list-item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__func-list-item main-nav__func-list-item--basket">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
       </ul>
-      <span class="main-nav__free-delivery"></span>
+      <span class="main-nav__free-delivery">Бесплатная доставка по России</span>
     </nav>
   </header>
   <main class="page__main">
-    <h1 class="page__main-heading"></h1>
+    <h1 class="page__main-heading">Вязание на заказ</h1>
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
-      <p class="form__description container"></p>
+      <p class="form__description container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
+        чтобы уточнить детали.</p>
 
       <fieldset class="field-set">
         <div class="field-set__container container">
-          <legend class="field-set__legend"></legend>
+          <legend class="field-set__legend">Тип</legend>
           <ul class="field-set__content">
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--radio" type="radio" name="type" value="interior" id="type-interior" checked>
+              <label class="btn-check__label" for="type-interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--radio" type="radio" name="type" value="toy" id="type-toy">
+              <label class="btn-check__label" for="type-toy">Детская игрушка</label>
+            </li>
           </ul>
         </div>
       </fieldset>
 
       <fieldset class="field-set field-set--bg-gray">
         <div class="field-set__container container">
-          <legend class="field-set__legend"></legend>
+          <legend class="field-set__legend">Цвет</legend>
           <ul class="field-set__content field-set__content--color">
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--checkbox" type="checkbox" name="color" value="white" id="color-white" checked>
+              <label class="btn-check__label" for="color-white">Белый</label>
+            </li>
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--checkbox" type="checkbox" name="color" value="gray" id="color-gray" checked>
+              <label class="btn-check__label" for="color-gray">Серый</label>
+            </li>
+
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--checkbox" type="checkbox" name="color" value="tiffany" id="color-tiffany">
+              <label class="btn-check__label" for="color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--checkbox" type="checkbox" name="color" value="black" id="color-black">
+              <label class="btn-check__label" for="color-black">Черный</label>
+            </li>
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--checkbox" type="checkbox" name="color" value="pink" id="color-pink">
+              <label class="btn-check__label" for="color-pink">Розовый</label>
+            </li>
+            <li class="form__option btn-check">
+              <input class="btn-check__input btn-check__input--checkbox" type="checkbox" name="color" value="orange" id="color-orange">
+              <label class="btn-check__label" for="color-orange">Оранжевый</label>
+            </li>
           </ul>
         </div>
       </fieldset>
 
       <fieldset class="field-set">
         <div class="field-set__container container">
-          <legend class="field-set__legend"></legend>
+          <legend class="field-set__legend">ФИО</legend>
           <div class="field-set__content">
+            <label class="form__label label" for="first-name">Имя:</label>
+            <input class="form__input-text input-text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" />
+
+            <label class="form__label label" for="last-name">Фамилия:</label>
+            <input class="form__input-text input-text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" />
+
+            <label class="form__label label" for="patronymic">Отчество:</label>
+            <input class="form__input-text input-text" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете" />
           </div>
         </div>
       </fieldset>
 
       <fieldset class="field-set field-set--bg-gray form__field-set-phone ">
         <div class="field-set__container container">
-          <legend class="field-set__legend"></legend>
+          <legend class="field-set__legend">Тел</legend>
           <div class="field-set__content">
+            <input class="form__input-text input-text input-text--tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" />
           </div>
         </div>
       </fieldset>
 
       <fieldset class="field-set field-set--bg-gray">
         <div class="field-set__container container">
-          <legend class="field-set__legend"></legend>
+          <legend class="field-set__legend">E-mail</legend>
           <div class="field-set__content">
+            <input class=" form__input-text input-text input-text--email" type="email" name="email" placeholder="Ваш Email*" />
           </div>
         </div>
       </fieldset>
 
       <fieldset class="field-set">
         <div class="field-set__container container">
-          <legend class="field-set__legend"></legend>
+          <legend class="field-set__legend">Доп</legend>
           <div class="field-set__content">
+            <textarea class="form__text-area text-area" name="additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </div>
       </fieldset>
       <footer class="form__footer container">
-        <p class="form__footnote"> </p>
-        <button class="form__submit-button button" type="submit"></button>
+        <p class="form__footnote">
+          <sup>*</sup>Поля обязательны для заполнения
+        </p>
+        <button class="form__submit-button button" type="submit">Отправить</button>
       </footer>
     </form>
 
@@ -113,10 +182,33 @@
   <footer class="footer">
     <div class="footer__container container">
       <a class="footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Магазин «Мишка»">
       </a>
       <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com" target="_blank">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
+              <span class="visually-hidden">Мы в Tвитере</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+        </a>
       </div>
     </div>
   </footer>
