@@ -46,6 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .production-process {
+    position: relative;
     width: $desktop-width - 2*$desktop-container-padding;
     padding: 46px 56px 59px 762px;
   }

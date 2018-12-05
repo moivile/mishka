@@ -1,5 +1,4 @@
 .week-product {
-  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 32px;
@@ -52,6 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .week-product {
+    position: relative;
     align-items: flex-start;
     padding-top: 40px;
     padding-bottom: 67px;
