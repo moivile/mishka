@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
+var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
@@ -18,6 +19,23 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("pixel-glass-js", function () {
+  return gulp.src("node_modules/pixel-glass/script.js")
+    .pipe(rename('pixel-glass.js'))
+    .pipe(gulp.dest("source/js"))
+})
+
+gulp.task("pixel-glass-css", function () {
+  return gulp.src("node_modules/pixel-glass/styles.css")
+    .pipe(rename('pixel-glass.css'))
+    .pipe(gulp.dest("source/css"))
+})
+
+gulp.task("normalize-css", function () {
+  return gulp.src("node_modules/normalize.css/normalize.css")
+    .pipe(gulp.dest("source/css"))
+})
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -31,4 +49,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "server", ));

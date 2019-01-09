@@ -1,3 +1,41 @@
+.catalog {
+  padding-top: 30px;
+}
+
 .catalog__list {
   @include reset-list;
+}
+
+.catalog__list-item {
+  margin-bottom: 30px;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 66px;
+  }
+
+  .catalog__list-item {
+    margin-bottom: 54px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 110px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -51px;
+  }
+
+  .catalog__list-item {
+    margin-bottom: 57px;
+    margin-left: 51px;
+  }
 }

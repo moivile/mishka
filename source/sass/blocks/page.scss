@@ -1,0 +1,45 @@
+.page {
+  min-width: $mobile-width;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: $font-dark-black;
+  font-weight: 700;
+  font-style: normal;
+
+  background-color: $bg-white;
+}
+
+.page__main-heading {
+  margin: 0;
+  border-top: 1px solid #f7f7f7;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: #f9f9f9;
+}
+
+.page__production-process {
+  margin-bottom: 58px;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .page__header {
+    margin-bottom: -62px;
+  }
+
+  .page__production-process {
+    margin-bottom: 63px;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .page__production-process {
+    margin-bottom: 105px;
+  }
+}

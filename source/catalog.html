@@ -4,35 +4,78 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет магазин милых вещиц для дома ручной работы «Мишка»</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("/img/mishka-catalog-mobile.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("/img/mishka-catalog-tablet.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1150px) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("/img/mishka-catalog-desktop.png");
+      }
+    }
+
+  </style>
+  <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/pixel-glass.css" rel="stylesheet" type="text/css">
+  <script src="/js/pixel-glass.js"></script>
 </head>
 
-<body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
-    </a>
-    <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">
-      <span class="visually-hidden">Открыть-закрыть меню</span>
-    </button>
-    <nav class="main-nav">
+<body class="page page--inner">
+  <header class="page__header">
+    <nav class="main-nav container">
+      <button class="main-nav__menu-toggle" type="button">
+        <span class="visually-hidden">Открыть-закрыть меню</span>
+      </button>
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+      </a>
       <ul class="main-nav__site-list">
-        <li>
-          <a class="main-nav__site">Каталог товаров</a>
+        <li class="main-nav__site-list-item">
+          <a>Каталог товаров</a>
         </li>
-        <li>
-          <a class="main-nav__site" href="form.html">Вязание на заказ</a>
+        <li class="main-nav__site-list-item">
+          <a href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <a class="main-nav__search" href="#">Поиск по сайту</a>
-      <a class="main-nav__basket" href="#">Корзина: пока пуста</a>
+      <ul class="main-nav__extra-site-list">
+        <li class="main-nav__extra-site-list-item">
+          <a href="catalog.html">Новые поступления</a>
+        </li>
+        <li class="main-nav__extra-site-list-item">
+          <a href="form.html">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-nav__func-list">
+        <li class="main-nav__func-list-item main-nav__func-list-item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__func-list-item main-nav__func-list-item--basket">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <span class="main-nav__free-delivery">Бесплатная доставка по России</span>
     </nav>
   </header>
-  <main class="page-main">
-    <h1 class="page-main__heading">Каталог товаров</h1>
+  <main class="page__main">
+    <h1 class="page__main-heading">Каталог товаров</h1>
 
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__list-item product-card">
@@ -82,7 +125,7 @@
       </ul>
     </section>
 
-    <section class="production-process">
+    <section class="page__production-process production-process container">
       <h2 class="production-process__heading">Процесс производства</h2>
       <div class="production-process__video-container video-container">
         <img src="http://placehold.it/260x150" width="260" height="150" alt="Видео процесса производства">
@@ -95,32 +138,37 @@
     </section>
 
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">
-            <span class="visually-hidden">Мы в Инстаграме</span>
-
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com" target="_blank">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
-            <span class="visually-hidden">Мы в Tвитере</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <img class="copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Магазин «Мишка»">
       </a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com" target="_blank">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com" target="_blank">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
+              <span class="visually-hidden">Мы в Tвитере</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

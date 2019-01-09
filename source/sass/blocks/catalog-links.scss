@@ -1,13 +1,35 @@
 .catalog-links {
   font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
+  color: $font-white;
+  background-color: #f9f9f9;
+}
+
+.catalog-links__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 }
 
 .catalog-links__list-item--interior-features {
-  background-color: #63d1bb;
+  background-color: $bg-light-aquamarine;
 }
 
 .catalog-links__list-item--toys {
-  background-color: #56c3b2;
+  background-color: $bg-dark-aquamarine;
 }
+
+
+@media(max-width: $tablet-width - 1) {
+  .catalog-links__list {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-links__list {
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: $desktop-width) {}

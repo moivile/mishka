@@ -1,7 +1,8 @@
 .text-area {
   font-size: 19px;
   line-height: 18px;
-  color: $secondary-font-color;
+  color: $font-light-black;
+  font-weight: 400;
 }
 
 .text-area::placeholder {

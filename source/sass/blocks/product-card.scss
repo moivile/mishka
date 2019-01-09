@@ -1,15 +1,16 @@
-.product-card__name {
-  font-size: 17px;
-  line-height: 24px;
-}
-
 .product-card__description {
   font-size: 13px;
   line-height: 30px;
-  color: $secondary-font-color;
+  color: $font-light-black;
+  font-weight: 400;
 }
 
 .product-card__price {
   font-size: 15px;
-  line-height: 24px;
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 316px;
+  }
 }

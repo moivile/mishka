@@ -1,4 +1,10 @@
+.about-us {
+  padding-top: 30px;
+}
+
 .about-us__heading {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 25px;
   line-height: 30px;
 }
@@ -8,6 +14,64 @@
 }
 
 .about-us__list-item {
-  font-size: 17px;
   line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
+
+  .about-us__heading {
+    margin-bottom: 43px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__list-item {
+    width: 334px;
+    line-height: 20px;
+  }
+
+  .about-us__list-item--eco {
+    order: 1;
+  }
+
+  .about-us__list-item--class {
+    order: 3;
+  }
+
+  .about-us__list-item--likes {
+    order: 5;
+  }
+
+  .about-us__list-item--with-love {
+    order: 2;
+  }
+
+  .about-us__list-item--domestic {
+    order: 4;
+  }
+
+  .about-us__list-item--gift-wrap {
+    order: 6;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 67px;
+    padding-left: 225px;
+    padding-bottom: 18px;
+  }
+
+  .about-us__heading {
+    margin-bottom: 41px;
+  }
 }
