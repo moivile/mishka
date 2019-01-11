@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #f5f5f5;
@@ -11,7 +10,6 @@
   z-index: 2;
   display: none;
   background-color: $bg-white;
-
   cursor: pointer;
   border: none;
 }
@@ -19,31 +17,25 @@
 .main-nav--closed .main-nav__menu-toggle {
   top: 32px;
   right: 31px;
-
   display: block;
   width: 20px;
   height: 14px;
 
   &::before {
     content: "";
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 20px;
     height: 2px;
-
     background-color: #6c6a6a;
     box-shadow: 0 6px 0 0 #6c6a6a, 0 12px 0 0 #6c6a6a;
   }
 }
 
-
 .main-nav--opened .main-nav__menu-toggle {
   top: 29px;
   right: 30px;
-
   display: block;
   width: 21px;
   height: 20px;
@@ -54,10 +46,8 @@
     position: absolute;
     top: 9px;
     left: -3px;
-
     width: 27px;
     height: 2px;
-
     background-color: #383535;
   }
 
@@ -70,7 +60,6 @@
     transform: rotate(-45deg);
   }
 }
-
 
 .main-nav__logo {
   width: 86px;
@@ -112,15 +101,59 @@
   text-decoration: none;
 }
 
-
 .main-nav__site-list-item a[href],
 .main-nav__func-list-item a[href] {
   &:hover {
-    opacity: 0.6;
+    color: rgba($font-dark-black, 0.6);
   }
 
   &:active {
+    color: rgba($font-dark-black, 0.3);
+  }
+}
+
+.main-nav__func-list-item {
+  position: relative;
+
+  &--search .main-nav__func-icon {
+    top: 31px;
+    left: 32px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--basket .main-nav__func-icon {
+    top: 30px;
+    left: 30px;
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.main-nav__func-icon {
+  position: absolute;
+  opacity: 0.2;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.main-nav__func-list-item a[href] {
+  &:hover .main-nav__func-icon {
+    opacity: 1;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+
+  &:active .main-nav__func-icon {
     opacity: 0.3;
+
+    path {
+      fill: #63d1bb;
+    }
   }
 }
 
@@ -135,7 +168,6 @@
   font-weight: 400;
   display: none;
 }
-
 
 @media(max-width: $tablet-width - 1) {
   .main-nav {
@@ -175,7 +207,6 @@
     width: 260px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .main-nav__site-list {
