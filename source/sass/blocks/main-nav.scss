@@ -33,6 +33,11 @@
   }
 }
 
+.main-nav--closed .main-nav__site-list,
+.main-nav--closed .main-nav__func-list {
+  display: none;
+}
+
 .main-nav--opened .main-nav__menu-toggle {
   top: 29px;
   right: 30px;
@@ -59,6 +64,15 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--nojs .main-nav__site-list,
+.main-nav--nojs .main-nav__func-list {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__menu-toggle {
+  display: none;
 }
 
 .main-nav__logo {
