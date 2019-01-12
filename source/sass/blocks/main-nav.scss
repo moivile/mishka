@@ -277,6 +277,23 @@
     order: 0;
     width: 410px;
     margin-right: 40px;
+
+    font-size: 17px;
+  }
+
+  .main-nav__site-list-item {
+    margin: 0;
+    padding: 30px 35px 34px 35px;
+    border-right: 1px solid #f9f9f9;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
   }
 
   .main-nav__logo {
