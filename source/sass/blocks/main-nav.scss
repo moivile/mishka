@@ -93,7 +93,8 @@
 }
 
 .main-nav__site-list-item a,
-.main-nav__func-list-item a {
+.main-nav__func-list-item a,
+.main-nav__extra-site-list a {
   color: $font-dark-black;
   text-decoration: none;
 }
@@ -170,7 +171,6 @@
   .main-nav {
     padding: 0;
     border-top: 1px solid #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
 
     &--closed .main-nav__site-list,
     &--closed .main-nav__func-list {
@@ -312,9 +312,19 @@
   }
 
   .main-nav__extra-site-list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     width: 410px;
     order: 3;
     margin-right: auto;
+  }
+
+  .main-nav__extra-site-list-item {
+    padding: 18px 0;
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
