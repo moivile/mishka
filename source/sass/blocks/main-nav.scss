@@ -244,14 +244,31 @@
 
   .main-nav__site-list {
     order: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     width: 320px;
     margin-right: auto;
+
+    font-size: 15px;
+  }
+
+  .main-nav__site-list-item {
+    border: 0;
+    padding: 18px 0;
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .main-nav__free-delivery {
-    display: block;
     order: 4;
+    display: block;
+    box-sizing: border-box;
     width: 260px;
+    padding-left: 29px;
   }
 }
 
