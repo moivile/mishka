@@ -14,7 +14,7 @@
 
 .page__main-heading {
   margin: 0;
-  border-top: 1px solid #f7f7f7;
+  border-top: 1px solid #f9f9f9;
   padding-top: 70px;
   padding-bottom: 122px;
   padding-left: calc(50% - #{$mobile-width/2 - 30px});
@@ -49,6 +49,19 @@
 
   .page__production-process {
     margin-bottom: 63px;
+  }
+
+  .page__main-heading {
+    padding-top: 154px;
+    padding-bottom: 374px;
+    padding-left: calc(50% - #{$tablet-width/2 - 50px});
+    padding-right: calc(50% - #{$tablet-width/2 - 50px});
+
+    font-size: 43px;
+    line-height: 50px;
+
+    background-image: url("/img/hero-tablet@1x.jpg");
+    background-position: 50% -1px;
   }
 
 }
