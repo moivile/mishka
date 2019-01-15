@@ -52,8 +52,8 @@
   }
 
   .page__main-heading {
-    padding-top: 154px;
-    padding-bottom: 374px;
+    padding-top: 153px;
+    padding-bottom: 373px;
     padding-left: calc(50% - #{$tablet-width/2 - 50px});
     padding-right: calc(50% - #{$tablet-width/2 - 50px});
 
@@ -62,6 +62,11 @@
 
     background-image: url("/img/hero-tablet@1x.jpg");
     background-position: 50% -1px;
+  }
+
+  .page--inner .page__main-heading {
+    padding-top: 94px;
+    padding-bottom: 80px;
   }
 
 }
