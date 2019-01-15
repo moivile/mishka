@@ -15,9 +15,19 @@
 .page__main-heading {
   margin: 0;
   border-top: 1px solid #f7f7f7;
+  padding-top: 70px;
+  padding-bottom: 122px;
+  padding-left: calc(50% - #{$mobile-width/2 - 30px});
+  padding-right: calc(50% - #{$mobile-width/2- 30px});
+
+  text-align: center;
   font-size: 27px;
   line-height: 30px;
-  background-color: #f9f9f9;
+
+  background-color: #fafafa;
+  background-image: url("/img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -18px;
 }
 
 .page__production-process {
@@ -26,9 +36,8 @@
 
 
 @media (min-width: $tablet-width) {
-
   .page__header {
-    margin-bottom: -62px;
+    margin-bottom: -61px;
   }
 
   .page__production-process {
