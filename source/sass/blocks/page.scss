@@ -73,6 +73,19 @@
 
 
 @media (min-width: $desktop-width) {
+  .page__main-heading {
+    padding-top: 155px;
+    padding-bottom: 359px;
+    padding-left: calc(50% - #{$desktop-width/2 - 225px});
+    padding-right: calc(50% - #{$desktop-width/2 - 225px});
+
+    font-size: 53px;
+    line-height: 57px;
+
+    background-image: url("/img/hero-desktop@1x.jpg");
+    background-position: 50% 0;
+  }
+
   .page__production-process {
     margin-bottom: 105px;
   }
