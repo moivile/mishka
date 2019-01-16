@@ -47,6 +47,7 @@
   background-color: $bg-light-aquamarine;
 
   &:hover {
+    top: -5px;
     background-color: #59d5bc;
   }
 
@@ -59,10 +60,15 @@
   }
 }
 
+.catalog-links__list-item--interior-features {
+  background-color: #59d5bc;
+}
+
 .catalog-links__list-item--toys a {
   background-color: $bg-dark-aquamarine;
 
   &:hover {
+    top: -5px;
     background-color: #46c1ae;
   }
 
@@ -73,6 +79,10 @@
     height: 60px;
     background: url("../img/icon-toy.svg") no-repeat 0 0;
   }
+}
+
+.catalog-links__list-item--toys {
+  background-color: #46c1ae;
 }
 
 
