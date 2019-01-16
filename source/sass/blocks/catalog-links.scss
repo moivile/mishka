@@ -86,6 +86,28 @@
   .catalog-links__list {
     flex-direction: row;
   }
+
+  .catalog-links__list-item {
+    width: 50%;
+  }
+
+  .catalog-links__list-item a {
+    padding-top: 28px;
+    padding-left: 35px;
+    padding-bottom: 31px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog-links__list-item--interior-features a::after {
+    top: 30px;
+  }
+
+  .catalog-links__list-item--toys a::after {
+    top: 31px;
+    right: 33px;
+  }
 }
 
 
