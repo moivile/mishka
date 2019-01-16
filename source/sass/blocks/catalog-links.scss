@@ -111,4 +111,8 @@
 }
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .catalog-links__list-item a {
+    padding-right: 350px;
+  }
+}
