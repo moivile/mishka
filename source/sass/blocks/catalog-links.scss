@@ -1,6 +1,6 @@
 .catalog-links {
   font-size: 19px;
-  color: $font-white;
+
   background-color: #f9f9f9;
 }
 
@@ -10,12 +10,69 @@
   list-style: none;
 }
 
-.catalog-links__list-item--interior-features {
-  background-color: $bg-light-aquamarine;
+.catalog-links__link {
+  position: relative;
+  display: block;
+
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-left: 30px;
+  padding-right: 160px;
+
+  color: $font-white;
+  text-decoration: none;
+
+  &:active {
+    color: rgba($font-white, 0.3);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
-.catalog-links__list-item--toys {
+
+
+.catalog-links__link--interior-features {
+  background-color: $bg-light-aquamarine;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &::after {
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background: url("../img/icon-interior.svg") no-repeat 0 0;
+  }
+}
+
+.catalog-links__link--toys {
   background-color: $bg-dark-aquamarine;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &::after {
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icon-toy.svg") no-repeat 0 0;
+  }
 }
 
 
