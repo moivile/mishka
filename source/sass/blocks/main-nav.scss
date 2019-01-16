@@ -100,7 +100,8 @@
 }
 
 .main-nav__site-list-item a[href],
-.main-nav__func-list-item a[href] {
+.main-nav__func-list-item a[href],
+.main-nav__extra-site-list a[href] {
   &:hover {
     color: rgba($font-dark-black, 0.6);
   }
