@@ -4,11 +4,7 @@
   padding-top: 27px;
   padding-bottom: 42px;
   color: $font-light-black;
-
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 0 bottom;
-  background-size: auto 6px;
+  @include add-zigzag-to-bottom("../img/bg-zigzag-line.svg", 6px);
 }
 
 .week-product__header {
@@ -76,11 +72,14 @@
 
 @media (min-width: $tablet-width) {
   .week-product {
-    position: relative;
     align-items: flex-start;
     padding-top: 46px;
     padding-bottom: 67px;
-    background-size: auto 15px;
+
+    &::after {
+      height: 15px;
+      background-size: auto 15px;
+    }
   }
 
   .week-product__header {
@@ -148,6 +147,13 @@
     padding-top: 114px;
     padding-bottom: 96px;
     padding-left: 225px;
+
+    &::after {
+      left: 50px;
+      right: 50px;
+      height: 23px;
+      background-size: auto 23px;
+    }
   }
 
   .week-product__header {

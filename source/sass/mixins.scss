@@ -12,3 +12,19 @@
     display: none;
   }
 }
+
+@mixin add-zigzag-to-bottom($url, $height) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $height;
+    background-image: url($url);
+    background-repeat: repeat-x;
+    background-size: auto $height;
+  }
+}
