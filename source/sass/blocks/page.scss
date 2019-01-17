@@ -17,8 +17,8 @@
   border-top: 1px solid #f9f9f9;
   padding-top: 70px;
   padding-bottom: 122px;
-  padding-left: calc(50% - #{$mobile-width/2 - 30px});
-  padding-right: calc(50% - #{$mobile-width/2- 30px});
+  padding-left: calc(50% - #{$mobile-width/2 - $mobile-container-padding});
+  padding-right: calc(50% - #{$mobile-width/2- $mobile-container-padding});
 
   text-align: center;
   font-size: 27px;
@@ -54,8 +54,8 @@
   .page__main-heading {
     padding-top: 154px;
     padding-bottom: 373px;
-    padding-left: calc(50% - #{$tablet-width/2 - 50px});
-    padding-right: calc(50% - #{$tablet-width/2 - 50px});
+    padding-left: calc(50% - #{$tablet-width/2 - $tablet-container-padding});
+    padding-right: calc(50% - #{$tablet-width/2 - $tablet-container-padding});
 
     font-size: 43px;
     line-height: 50px;
