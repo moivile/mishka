@@ -30,6 +30,16 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    color: $font-white;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba($font-white, 0.3);
+    background-color: #444444;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
