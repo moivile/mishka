@@ -28,3 +28,19 @@
     background-size: auto $height;
   }
 }
+
+@mixin update-zigzag-height($height) {
+  &::after {
+    height: $height;
+    background-size: auto $height;
+  }
+}
+
+@mixin update-zigzag($height, $padding) {
+  &::after {
+    left: $padding;
+    right: $padding;
+    height: $height;
+    background-size: auto $height;
+  }
+}

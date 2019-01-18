@@ -128,10 +128,7 @@
 @media (min-width: $desktop-width) {
 
   .catalog-links {
-    &::after {
-      height: 34px;
-      background-size: auto 34px;
-    }
+    @include update-zigzag-height(34px);
   }
 
   .catalog-links__list-item a {

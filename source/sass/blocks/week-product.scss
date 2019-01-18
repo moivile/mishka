@@ -76,10 +76,7 @@
     padding-top: 35px;
     padding-bottom: 67px;
 
-    &::after {
-      height: 15px;
-      background-size: auto 15px;
-    }
+    @include update-zigzag-height(15px);
   }
 
   .week-product__header {
@@ -148,12 +145,7 @@
     padding-bottom: 96px;
     padding-left: 225px;
 
-    &::after {
-      left: 50px;
-      right: 50px;
-      height: 23px;
-      background-size: auto 23px;
-    }
+    @include update-zigzag(23px, 50px);
   }
 
   .week-product__header {
