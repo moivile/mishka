@@ -78,12 +78,15 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 55px;
+    padding-top: 51px;
     padding-bottom: 15px;
   }
 
   .about-us__heading {
     margin-bottom: 43px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .about-us__list {
@@ -92,8 +95,14 @@
   }
 
   .about-us__list-item {
+    box-sizing: border-box;
     width: 334px;
-    line-height: 20px;
+
+    padding-right: 40px;
+    padding-bottom: 52px;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about-us__list-item--eco {
