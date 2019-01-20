@@ -133,12 +133,20 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding-top: 67px;
+    padding-top: 60px;
     padding-left: 225px;
     padding-bottom: 18px;
   }
 
   .about-us__heading {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list-item {
+    width: 350px;
+    padding-right: 55px;
   }
 }
