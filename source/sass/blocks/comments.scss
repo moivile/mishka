@@ -75,24 +75,42 @@
 
 @media (min-width: $tablet-width) {
   .comments {
-    padding-top: 79px;
+    padding-top: 77px;
     padding-bottom: 132px;
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
   }
 
   .comments__heading {
-    margin-bottom: 53px;
+    margin-bottom: 49px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .comments__list {
-    margin-bottom: 0;
+    margin: 0;
+  }
+
+  .comments__text {
+    margin-bottom: 57px;
+    font-size: 17px;
+  }
+
+  .comments__author-name {
+    margin-bottom: 4px;
+    font-size: 18px;
   }
 
   .comments__scroll-buttons {
     position: absolute;
-    right: 68px;
-    margin-top: -45px;
-    width: 137px;
+    right: 50px;
+    bottom: 123px;
+    width: 174px;
     height: 26px;
+  }
+
+  .comments__scroll-button {
+    border: 0;
   }
 
   .comments__write-comment {
