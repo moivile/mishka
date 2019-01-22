@@ -1,7 +1,9 @@
 .comments {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 54px;
+  padding-bottom: 51px;
+
+  @include add-zigzag-to-bottom("../img/bg-zigzag-line.svg", 6px);
 }
 
 .comments__heading {
@@ -76,8 +78,10 @@
 @media (min-width: $tablet-width) {
   .comments {
     padding-top: 77px;
-    padding-bottom: 132px;
+    padding-bottom: 130px;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
+
+    @include update-zigzag-height(15px);
   }
 
   .comments__heading {
@@ -104,7 +108,7 @@
   .comments__scroll-buttons {
     position: absolute;
     right: 50px;
-    bottom: 123px;
+    bottom: 121px;
     width: 174px;
     height: 26px;
   }
