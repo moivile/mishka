@@ -1,35 +1,76 @@
 .comments {
   position: relative;
-  padding-top: 18px;
+  padding-top: 30px;
   padding-bottom: 54px;
 }
 
 .comments__heading {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   font-size: 25px;
   line-height: 30px;
 }
 
 .comments__list {
   @include reset-list;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .comments__text {
+  margin: 0;
+  margin-bottom: 27px;
+
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
 }
 
+.comments__author-name {
+  margin: 0;
+  margin-bottom: 3px;
+}
+
 .comments__author-nick {
+  margin: 0;
   line-height: 30px;
   font-weight: 400;
 }
 
 .comments__scroll-buttons {
   margin-bottom: 38px;
+  font-size: 0;
+}
+
+.comments__scroll-button {
+  display: inline-block;
+  width: 50%;
   height: 52px;
+  padding: 0;
+  border: 1px solid #f9f9f9;
+
+  vertical-align: top;
+  font-size: 17px;
+  background-color: $bg-white;
+  cursor: pointer;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.comments__scroll-button--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.comments__scroll-button--next {
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 @media (min-width: $tablet-width) {
