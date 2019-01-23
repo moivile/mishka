@@ -11,12 +11,52 @@
 }
 
 .contacts__list {
-  @include reset-list;
-  margin-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 37px;
   font-size: 15px;
   line-height: 30px;
   color: $font-light-black;
   font-weight: 400;
+}
+
+.contacts__label {
+  width: 77px;
+  margin-bottom: 31px;
+}
+
+.contacts__text {
+  margin: 0;
+  width: calc(100% - 77px);
+}
+
+.contacts__mail-link {
+  position: relative;
+  text-decoration: none;
+  color: $font-light-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+
+  &:hover {
+    color: #46c1ae;
+
+    &:after {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
