@@ -20,10 +20,25 @@
 }
 
 .contacts__map {
+  display: block;
+
   margin-bottom: 39px;
   margin-left: -$mobile-container-padding;
+  max-width: none;
   width: $mobile-width;
   height: 457px;
+}
+
+.contacts__map--image {
+  display: none;
+}
+
+.contacts--nojs .contacts__map {
+  display: none;
+}
+
+.contacts--nojs .contacts__map--image {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
