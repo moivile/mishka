@@ -4,4 +4,47 @@
 
 .social__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+
+  &:hover .social__icon path {
+    fill: #46c1ae;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}
+
+
+.social__icon {
+  display: block;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.social__icon--instagram {
+  width: 22px;
+  height: 21px;
+}
+
+.social__icon--facebook {
+  width: 15px;
+  height: 28px;
+}
+
+.social__icon--twitter {
+  width: 23px;
+  height: 20px;
 }
