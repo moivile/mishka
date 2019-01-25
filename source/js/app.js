@@ -1,22 +1,24 @@
-document.querySelector(".contacts").classList.remove("contacts--nojs");
+const contactsBlock = document.querySelector(".contacts");
+if (contactsBlock) {
+  contactsBlock.classList.remove("contacts--nojs");
+}
+var navMainBlock = document.querySelector(".main-nav");
+navMainBlock.classList.remove("main-nav--nojs");
 
-var navMain = document.querySelector(".main-nav");
-navMain.classList.remove("main-nav--nojs");
-
-var navToggle = document.querySelector(".main-nav__menu-toggle");
+var navToggleElem = document.querySelector(".main-nav__menu-toggle");
 
 
 
-if (!navMain.classList.contains("main-nav--closed") && !navMain.classList.contains("main-nav--opened")) {
-  navMain.classList.add("main-nav--closed");
+if (!navMainBlock.classList.contains("main-nav--closed") && !navMainBlock.classList.contains("main-nav--opened")) {
+  navMainBlock.classList.add("main-nav--closed");
 }
 
-navToggle.addEventListener("click", function () {
-  if (navMain.classList.contains("main-nav--closed")) {
-    navMain.classList.remove("main-nav--closed");
-    navMain.classList.add("main-nav--opened");
+navToggleElem.addEventListener("click", function () {
+  if (navMainBlock.classList.contains("main-nav--closed")) {
+    navMainBlock.classList.remove("main-nav--closed");
+    navMainBlock.classList.add("main-nav--opened");
   } else {
-    navMain.classList.add("main-nav--closed");
-    navMain.classList.remove("main-nav--opened");
+    navMainBlock.classList.add("main-nav--closed");
+    navMainBlock.classList.remove("main-nav--opened");
   }
 });
