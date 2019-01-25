@@ -24,14 +24,34 @@
 @media (min-width: $tablet-width) {
   .footer__container {
     flex-direction: row;
+    align-items: center;
     min-height: 143px;
   }
 
   .footer__logo {
     display: block;
+    margin-right: 159px;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo-image {
+    display: block;
     width: 102px;
     height: 34px;
-    margin: auto 159px auto 0;
+
+    path {
+      fill: #000000;
+    }
+
+    &:hover {
+
+      path {
+        fill: #46c1ae;
+      }
+    }
   }
 
   .footer__social {

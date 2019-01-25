@@ -14,18 +14,8 @@
   align-items: center;
 }
 
-.social__link {
-
-  &:hover .social__icon {
-
-    path {
-      fill: #46c1ae;
-    }
-  }
-
-  &:active .social__icon {
-    opacity: 0.3;
-  }
+.social__link:active {
+  opacity: 0.3;
 }
 
 
@@ -34,6 +24,13 @@
 
   path {
     fill: #000000;
+  }
+
+  &:hover {
+
+    path {
+      fill: #46c1ae;
+    }
   }
 }
 
