@@ -1,8 +1,21 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 182px;
-}
 
-.copyright__text {
   font-size: 19px;
   line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $font-dark-black;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  width: 27px;
+  height: 34px;
 }
