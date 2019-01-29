@@ -44,11 +44,40 @@
 
 .product-card__price {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 
   padding-top: 21px;
   font-size: 15px;
   border-top: 1px solid #ececec;
+}
+
+.product-card__order-icon {
+  display: block;
+  width: 21px;
+  height: 18px;
+
+  opacity: 0.2;
+
+  path {
+    fill: #000000;
+  }
+}
+
+
+.product-card__order-button {
+  &:hover .product-card__order-icon {
+    opacity: 1;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+
+  &:active .product-card__order-icon {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {
