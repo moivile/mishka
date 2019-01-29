@@ -96,6 +96,48 @@
   }
 }
 
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    flex-direction: row;
+  }
+
+  .product-card__image-link {
+    flex-shrink: 0;
+    margin: -1px;
+    margin-right: 0;
+  }
+
+  .product-card__image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .product-card__wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .product-card__heading {
+    padding-right: 40px;
+    font-size: 20px;
+  }
+
+  .product-card__description {
+    font-size: 15px;
+  }
+
+  .product-card__price {
+    margin-top: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    font-size: 17px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .product-card {
     width: 316px;
