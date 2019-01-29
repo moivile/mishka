@@ -1,5 +1,4 @@
 .product-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid #ededed;
@@ -18,26 +17,38 @@
 
 .product-card__wrapper {
   order: 2;
+  padding: 27px;
 }
 
 .product-card__heading-link {
+  display: block;
+  margin-bottom: 5px;
   text-decoration: none;
   color: $font-dark-black;
 }
 
 .product-card__heading {
   margin: 0;
+  font-size: 17px;
 }
 
 .product-card__description {
+  margin: 0;
+  margin-bottom: 19px;
+
   font-size: 13px;
   line-height: 30px;
-  color: $font-light-black;
   font-weight: 400;
+  color: $font-light-black;
 }
 
 .product-card__price {
+  display: flex;
+
+
+  padding-top: 21px;
   font-size: 15px;
+  border-top: 1px solid #ececec;
 }
 
 @media (min-width: $desktop-width) {
