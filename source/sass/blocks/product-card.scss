@@ -140,6 +140,31 @@
 
 @media (min-width: $desktop-width) {
   .product-card {
+    box-sizing: border-box;
     width: 316px;
+    flex-direction: column;
+  }
+
+  .product-card__image-link {
+    margin: -1px;
+    margin-bottom: 0;
+  }
+
+
+  .product-card__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product-card__heading {
+    padding-right: 25px;
+  }
+
+  .product-card__description {
+    margin-bottom: 13px;
+  }
+
+  .product-card__price {
+    margin-left: 0;
   }
 }
