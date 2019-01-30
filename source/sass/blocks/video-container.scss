@@ -1,18 +1,18 @@
 .video-container {
-    width: $mobile-width - 2*$mobile-container-padding;
-    height: 150px;
+  width: $mobile-width - 2*$mobile-container-padding;
+  height: 150px;
 }
 
 @media (min-width: $tablet-width) {
-    .video-container {
-        width: $tablet-width - 2*$tablet-container-padding;
-        height: 455px;
-    }
+  .video-container {
+    width: $tablet-width - 2*$tablet-container-padding;
+    height: 455px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .video-container {
-        width: 682px;
-        height: 455px;
-    }
+  .video-container {
+    width: 682px;
+    height: 455px;
+  }
 }
