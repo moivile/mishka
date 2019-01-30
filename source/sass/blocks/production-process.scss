@@ -49,15 +49,20 @@
   .production-process__video-container {
     order: -1;
     margin-bottom: 38px;
-    margin-left: -41px;
+    margin-left: -41px - 1px;
   }
 
   .production-process__heading {
-    margin-bottom: 34px;
+    padding-left: 65px;
+    margin-bottom: 32px;
+    font-size: 20px;
   }
 
   .production-process__description {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
