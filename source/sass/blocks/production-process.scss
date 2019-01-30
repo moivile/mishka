@@ -1,6 +1,7 @@
 .production-process {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: $mobile-width - 2*$mobile-container-padding;
   padding: 25px 33px 32px 33px;
   border: 1px solid #ededed;
@@ -28,6 +29,7 @@
 }
 
 .production-process__video-container {
+  position: relative;
   margin-left: -33px - 1px;
   margin-bottom: 26px;
 }
@@ -71,21 +73,25 @@
     position: relative;
     width: $desktop-width - 2*$desktop-container-padding;
     padding: 46px 56px 59px 762px;
+    min-height: 455px;
   }
 
   .production-process__video-container {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
     margin: 0;
   }
 
   .production-process__heading {
-    margin-bottom: 36px;
+    padding: 0;
+    padding-top: 50px;
+    margin-bottom: 33px;
+
+    background-position: 0 -4px;
   }
 
   .production-process__description {
-    margin-bottom: 40px;
+    margin-bottom: auto;
   }
-
 }

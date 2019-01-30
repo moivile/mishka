@@ -1,5 +1,4 @@
 .video-container {
-  position: relative;
   width: $mobile-width - 2*$mobile-container-padding;
   height: 150px;
 }
@@ -20,7 +19,7 @@
   border: none;
   background: none;
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
 
   &:hover {
     transform: translateX(-50%) translateY(-50%) scale(1.2);
