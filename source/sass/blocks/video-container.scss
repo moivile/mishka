@@ -1,6 +1,41 @@
 .video-container {
+  position: relative;
   width: $mobile-width - 2*$mobile-container-padding;
   height: 150px;
+}
+
+.video-container__image {
+  width: 100%;
+  height: 100%;
+}
+
+.video-container__play-button {
+  width: 101px;
+  height: 77px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.video-container__play-button-image {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
