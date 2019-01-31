@@ -4,12 +4,77 @@
 }
 
 .btn-check__label {
+  position: relative;
   display: flex;
   align-items: center;
   padding-left: 63px;
 
   line-height: 18px;
+  cursor: pointer;
+
+  &:hover::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: rgba(#444444, 0.3);
+  }
 }
+
+.btn-check__label--radio::before {
+  position: absolute;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.btn-check__input:checked+.btn-check__label--radio::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: (38px/2);
+  left: (38px/2);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.btn-check__label--checkbox::before {
+  position: absolute;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 39px;
+  border: 2px solid #444444;
+}
+
+
+.btn-check__input:checked+.btn-check__label--checkbox::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: (39px/2);
+  left: (40px/2);
+  width: 22px;
+  height: 16px;
+  background-image: url(../img/icon-tick.svg);
+  background-size: 22px 16px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
 
 .btn-check__input {
   @include visually-hide;
