@@ -5,7 +5,7 @@
 }
 
 .field-set__legend {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   line-height: 16px;
   color: $font-light-aquamarine;
   text-transform: uppercase;
@@ -51,7 +51,10 @@
     margin-right: 175px;
   }
 
-  .field-set__content--color {
+
+
+
+  .field-set--color .field-set__content {
     width: 875px;
     margin-right: 0;
   }

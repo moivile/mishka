@@ -1,4 +1,13 @@
+.btn-check {
+  display: flex;
+  min-height: 39px;
+}
+
 .btn-check__label {
+  display: flex;
+  align-items: center;
+  padding-left: 63px;
+
   line-height: 18px;
 }
 
