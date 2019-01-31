@@ -1,3 +1,7 @@
 .btn-check__label {
   line-height: 18px;
 }
+
+.btn-check__input {
+  @include visually-hide;
+}
