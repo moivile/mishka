@@ -15,9 +15,25 @@
   @include reset-list;
 }
 
+.field-set__option {
+  margin-bottom: 22px;
+}
+
 @media (min-width: $tablet-width) {
-  .field-set {
-    padding: 50px 0;
+  .field-set--color {
+    padding-top: 50px;
+    padding-bottom: 28px;
+  }
+
+  .field-set--color .field-set__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .field-set--color .field-set__option {
+    width: 240px;
   }
 
   .field-set--bg-gray {
@@ -38,6 +54,10 @@
 
   .field-set__content {
     width: 501px;
+  }
+
+  .field-set__option {
+    margin-bottom: 24px;
   }
 }
 

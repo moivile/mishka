@@ -79,3 +79,17 @@
 .btn-check__input {
   @include visually-hide;
 }
+
+
+@media (min-width: $tablet-width) {
+  .btn-check {
+    min-height: 52px;
+  }
+
+  .btn-check__label {
+    padding-left: 81px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+}

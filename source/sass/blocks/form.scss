@@ -10,12 +10,8 @@
   font-weight: 400;
 }
 
-.form__field-set {
+.form__field-set-type {
   margin-bottom: 10px;
-}
-
-.form__option {
-  margin-bottom: 22px;
 }
 
 .form__footnote {
@@ -38,11 +34,16 @@
   }
 
   .form__description {
-    margin-bottom: 4px;
+    margin-bottom: 55px;
 
     font-size: 17px;
     line-height: 30px;
   }
+
+  .form__field-set-type {
+    margin-bottom: 26px;
+  }
+
 
   .form__field-set-phone {
     margin-bottom: -76px;
