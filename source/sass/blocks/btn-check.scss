@@ -92,4 +92,29 @@
     line-height: 18px;
   }
 
+  .btn-check__label--radio::before {
+    width: 51px;
+    height: 51px;
+  }
+
+  .btn-check__input:checked+.btn-check__label--radio::after {
+    top: (51px/2);
+    left: (51px/2);
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn-check__label--checkbox::before {
+    width: 54px;
+    height: 52px;
+  }
+
+
+  .btn-check__input:checked+.btn-check__label--checkbox::after {
+    top: (52px/2);
+    left: (54px/2);
+    width: 33px;
+    height: 22px;
+    background-size: 33px 22px;
+  }
 }
