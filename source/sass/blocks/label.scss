@@ -3,5 +3,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  font-size: 19px;
+  .label {
+    font-size: 19px;
+  }
 }
