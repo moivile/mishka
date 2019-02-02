@@ -5,10 +5,22 @@
 }
 
 .field-set__legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   margin-bottom: 24px;
   line-height: 16px;
   color: $font-light-aquamarine;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 198px;
+    background-color: #62d1ba;
+  }
 }
 
 .field-set__content {
@@ -50,6 +62,10 @@
     width: 80px;
     margin: 0;
     margin-top: 19px;
+
+    &::after {
+      content: none;
+    }
   }
 
   .field-set__content {
