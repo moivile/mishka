@@ -1,11 +1,29 @@
 .input-text {
-  font-size: 19px;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 17px;
   line-height: 18px;
   color: $font-light-black;
   font-weight: 400;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom-color: #62d1ba;
+    outline: none;
+  }
 }
 
 
-.input-text::placeholder {
-  opacity: 0.3;
+@media (min-width: $tablet-width) {
+  .input-text {
+    font-size: 19px;
+  }
 }

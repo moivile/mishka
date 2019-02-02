@@ -83,7 +83,9 @@
 
 
 .product-card__order-button {
-  &:hover .product-card__order-icon {
+
+  &:hover .product-card__order-icon,
+  &:focus .product-card__order-icon {
     opacity: 1;
 
     path {

@@ -24,11 +24,21 @@
 }
 
 .field-set__content {
+  display: flex;
+  flex-direction: column;
   @include reset-list;
 }
 
 .field-set__option {
   margin-bottom: 22px;
+}
+
+.field-set__label {
+  margin-top: 3px;
+}
+
+.field-set__input-text {
+  margin-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,7 +48,7 @@
   }
 
   .field-set--color .field-set__content {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 

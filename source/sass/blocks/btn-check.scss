@@ -34,6 +34,11 @@
   border-radius: 50%;
 }
 
+.btn-check__input {
+  @include visually-hide;
+}
+
+
 .btn-check__input:checked+.btn-check__label--radio::after {
   position: absolute;
   content: "";
@@ -74,12 +79,9 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-
-
-.btn-check__input {
-  @include visually-hide;
+.btn-check__input:focus+.btn-check__label::before {
+  border-color: #62d1ba;
 }
-
 
 @media (min-width: $tablet-width) {
   .btn-check {
