@@ -34,7 +34,10 @@
 }
 
 .field-set__label {
+  display: flex;
+  flex-direction: column;
   margin-top: 3px;
+  line-height: 18px;
 }
 
 .field-set__input-text {
@@ -84,6 +87,19 @@
 
   .field-set__option {
     margin-bottom: 24px;
+  }
+
+  .field-set__label {
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+
+    font-size: 19px;
+  }
+
+  .field-set__input-text {
+    flex-grow: 1;
+    margin-left: 25px;
   }
 }
 
