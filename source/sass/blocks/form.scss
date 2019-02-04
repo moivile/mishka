@@ -18,6 +18,14 @@
   margin-bottom: 9px;
 }
 
+.form__field-set-full-name {
+  margin-bottom: 12px;
+}
+
+.form__field-set-tel {
+  margin-bottom: 12px;
+}
+
 .form__footnote {
   margin: 0;
   margin-bottom: 30px;
@@ -48,13 +56,16 @@
     margin-bottom: 26px;
   }
 
-  .form__field-set-color{
+  .form__field-set-color {
     margin-bottom: 45px;
   }
 
+  .form__field-set-full-name {
+    margin-bottom: 31px;
+  }
 
-  .form__field-set-phone {
-    margin-bottom: -76px;
+  .form__field-set-tel {
+    margin-bottom: 0;
   }
 
   .form__footer {
