@@ -45,7 +45,8 @@
   }
 }
 
-.field-set__input-text:hover+.field-set__input-icon {
+.field-set__input-text:hover+.field-set__input-icon,
+.field-set__input-text:focus+.field-set__input-icon {
   opacity: 1;
 
   path {
