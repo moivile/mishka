@@ -1,10 +1,30 @@
 .text-area {
-  font-size: 19px;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  padding-top: 13px;
+  padding-left: 15px;
+  border: 2px solid #444444;
+  min-height: 142px;
+  font-size: 17px;
   line-height: 18px;
   color: $font-light-black;
   font-weight: 400;
+  resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
 }
 
 .text-area::placeholder {
+  font: inherit;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .text-area {
+    font-size: 19px;
+  }
 }
