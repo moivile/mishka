@@ -31,7 +31,42 @@
   margin-bottom: 7px;
 }
 
+.field-set__input-icon {
+  position: absolute;
+  display: block;
+
+  opacity: 0.2;
+
+  path {
+    fill: #444444;
+  }
+}
+
+.field-set__input-text:hover+.field-set__input-icon {
+  opacity: 1;
+
+  path {
+    fill: #62d1ba;
+  }
+}
+
+.field-set--tel .field-set__input-icon {
+  top: 18px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+}
+
+
+.field-set--email .field-set__input-icon {
+  top: 10px;
+  right: 3px;
+  width: 32px;
+  height: 32px;
+}
+
 .field-set__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   @include reset-list;
@@ -84,6 +119,20 @@
   .field-set--email {
     padding-bottom: 31px;
   }
+
+
+  .field-set--tel .field-set__input-icon {
+    top: 17px;
+    right: 26px;
+  }
+
+
+  .field-set--email .field-set__input-icon {
+    top: 16px;
+    right: 22px;
+  }
+
+
 
   .field-set--bg-gray {
     background-color: $bg-light-gray;
@@ -149,5 +198,16 @@
 
   .field-set--color .field-set__option {
     width: 262px;
+  }
+
+  .field-set--tel .field-set__input-icon {
+    top: 16px;
+    right: 9px;
+  }
+
+
+  .field-set--email .field-set__input-icon {
+    top: 17px;
+    right: 4px;
   }
 }
