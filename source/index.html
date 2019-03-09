@@ -10,7 +10,8 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* Mobile layout by default */
-      background-image: url("/img/mishka-index-mobile.png");
+      /* background-image: url("/img/mishka-index-mobile.png"); */
+      background-image: url("/img/mishka-index-mobile-modal.png");
       min-height: 4248px;
     }
 
@@ -18,7 +19,8 @@
     @media (min-width: 768px) {
       HTML {
         /* Tablet layout */
-        background-image: url("/img/mishka-index-tablet.png");
+        /* background-image: url("/img/mishka-index-tablet.png"); */
+        background-image: url("/img/mishka-index-tablet-modal.png");
         min-height: 3710px;
       }
     }
@@ -27,7 +29,8 @@
     @media (min-width: 1150px) {
       HTML {
         /* Desktop layout */
-        background-image: url("/img/mishka-index-desktop.png");
+        /* background-image: url("/img/mishka-index-desktop.png"); */
+        background-image: url("/img/mishka-index-desktop-modal.png");
         min-height: 3623px;
       }
     }
@@ -239,6 +242,27 @@
       </a>
     </div>
   </footer>
+  <section class="modal modal--show modal-add-to-basket">
+    <h2 class="modal-add-to-basket__heading">Добавить в корзину</h2>
+    <p class="modal-add-to-basket__description">Выберите размер:</p>
+
+    <form class="modal-add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="modal-add-to-basket__size-options size-options">
+        <input class="size-options__input" type="radio" name="size" value="s" id="size-s" checked>
+        <label class="size-options__label" for="size-s">S</label>
+
+        <input class="size-options__input" type="radio" name="size" value="m" id="size-m">
+        <label class="size-options__label" for="size-m">M</label>
+
+        <input class="size-options__input" type="radio" name="size" value="l" id="size-l">
+        <label class="size-options__label" for="size-l">L</label>
+      </div>
+
+      <button class="modal-add-to-basket__button button" type="submit">Добавить</button>
+    </form>
+  </section>
+  <div class="modal-overlay modal-overlay--show"></div>
   <script src="js/app.js"></script>
 </body>
 
