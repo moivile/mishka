@@ -246,6 +246,27 @@
       </a>
     </div>
   </footer>
+  <section class="modal modal-add-to-basket">
+    <h2 class="modal-add-to-basket__heading">Добавить в корзину</h2>
+    <p class="modal-add-to-basket__description">Выберите размер:</p>
+
+    <form class="modal-add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="size-options">
+        <input class="size-options__input" type="radio" name="size" value="s" id="size-s" checked>
+        <label class="size-options__label" for="size-s">s</label>
+
+        <input class="size-options__input" type="radio" name="size" value="m" id="size-m">
+        <label class="size-options__label" for="size-m">m</label>
+
+        <input class="size-options__input" type="radio" name="size" value="l" id="size-l">
+        <label class="size-options__label" for="size-l">l</label>
+      </div>
+
+      <button class="modal-add-to-basket__button button" type="submit">Добавить</button>
+    </form>
+  </section>
+  <div class="modal-overlay"></div>
   <script src="js/app.js"></script>
 </body>
 

@@ -29,16 +29,18 @@ navToggleElem.addEventListener("click", function () {
 
 // Initialize modal-add-to-basket block
 var weekProductOrderButton = document.querySelector(".week-product__order-button");
+var productCardOrderButtons = document.querySelectorAll(".product-card__order-button");
 var modalAddToBasketOverlay = document.querySelector(".modal-overlay");
 var modalAddToBasket = document.querySelector(".modal-add-to-basket");
+var form = modalAddToBasket.querySelector("form");
 
 
 
-weekProductOrderButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalAddToBasket.classList.add("modal--show");
-  modalAddToBasketOverlay.classList.add("modal-overlay--show");
+if (weekProductOrderButton) weekProductOrderButton.addEventListener("click", showModalAddToBasket);
+if (productCardOrderButtons) productCardOrderButtons.forEach(function (orderButton) {
+  orderButton.addEventListener("click", showModalAddToBasket);
 });
+
 
 modalAddToBasketOverlay.addEventListener("click", closeModalAddToBasket);
 
@@ -49,8 +51,11 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
-var form = modalAddToBasket.querySelector("form");
+function showModalAddToBasket(evt) {
+  evt.preventDefault();
+  modalAddToBasket.classList.add("modal--show");
+  modalAddToBasketOverlay.classList.add("modal-overlay--show");
+}
 
 function closeModalAddToBasket() {
   form.reset();
