@@ -1,7 +1,11 @@
+// Initialize contacts block
 const contactsBlock = document.querySelector(".contacts");
 if (contactsBlock) {
   contactsBlock.classList.remove("contacts--nojs");
 }
+
+
+// Initialize main-nav block
 var navMainBlock = document.querySelector(".main-nav");
 navMainBlock.classList.remove("main-nav--nojs");
 
@@ -22,3 +26,34 @@ navToggleElem.addEventListener("click", function () {
     navMainBlock.classList.remove("main-nav--opened");
   }
 });
+
+// Initialize modal-add-to-basket block
+var weekProductOrderButton = document.querySelector(".week-product__order-button");
+var modalAddToBasketOverlay = document.querySelector(".modal-overlay");
+var modalAddToBasket = document.querySelector(".modal-add-to-basket");
+
+
+
+weekProductOrderButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalAddToBasket.classList.add("modal--show");
+  modalAddToBasketOverlay.classList.add("modal-overlay--show");
+});
+
+modalAddToBasketOverlay.addEventListener("click", closeModalAddToBasket);
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalAddToBasket.classList.contains("modal--show")) closeModalAddToBasket();
+  }
+});
+
+
+var form = modalAddToBasket.querySelector("form");
+
+function closeModalAddToBasket() {
+  form.reset();
+  modalAddToBasket.classList.remove("modal--show");
+  modalAddToBasketOverlay.classList.remove("modal-overlay--show");
+}
