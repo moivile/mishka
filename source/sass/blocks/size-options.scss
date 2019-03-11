@@ -1,0 +1,34 @@
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.size-options__input {
+  @include visually-hide;
+}
+
+.size-options__label {
+  display: block;
+  min-width: 78px;
+  padding: 12px 0;
+
+  text-align: center;
+  border: 2px solid #ececec;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: #c7c7c7;
+    cursor: pointer;
+  }
+}
+
+.size-options__input:checked+.size-options__label {
+  border-color: #62d1ba;
+}
+
+@media (min-width: $tablet-width) {
+  .size-options__label {
+    min-width: 108px;
+  }
+}
