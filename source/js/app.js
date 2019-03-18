@@ -32,17 +32,18 @@ var weekProductOrderButton = document.querySelector(".week-product__order-button
 var productCardOrderButtons = document.querySelectorAll(".product-card__order-button");
 var modalAddToBasketOverlay = document.querySelector(".modal-overlay");
 var modalAddToBasket = document.querySelector(".modal-add-to-basket");
-var form = modalAddToBasket.querySelector("form");
+var form = document.querySelector(".modal-add-to-basket__form");
 
 
 
 if (weekProductOrderButton) weekProductOrderButton.addEventListener("click", showModalAddToBasket);
-if (productCardOrderButtons) productCardOrderButtons.forEach(function (orderButton) {
-  orderButton.addEventListener("click", showModalAddToBasket);
-});
+
+for (var i = 0; i < productCardOrderButtons.length; i++) {
+  productCardOrderButtons[i].addEventListener('click', showModalAddToBasket);
+}
 
 
-modalAddToBasketOverlay.addEventListener("click", closeModalAddToBasket);
+if (modalAddToBasketOverlay) modalAddToBasketOverlay.addEventListener("click", closeModalAddToBasket);
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
