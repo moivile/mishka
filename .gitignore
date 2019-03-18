@@ -11,3 +11,4 @@ npm-debug.*
 source/css/*.css
 Thumbs.db
 source/js/pixel-glass.js
+source/js/picturefill.min.js

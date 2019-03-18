@@ -21,20 +21,26 @@ gulp.task("css", function () {
 
 gulp.task("pixel-glass-js", function () {
   return gulp.src("node_modules/pixel-glass/script.js")
-    .pipe(rename('pixel-glass.js'))
-    .pipe(gulp.dest("source/js"))
-})
+    .pipe(rename("pixel-glass.js"))
+    .pipe(gulp.dest("source/js"));
+});
 
 gulp.task("pixel-glass-css", function () {
   return gulp.src("node_modules/pixel-glass/styles.css")
-    .pipe(rename('pixel-glass.css'))
-    .pipe(gulp.dest("source/css"))
-})
+    .pipe(rename("pixel-glass.css"))
+    .pipe(gulp.dest("source/css"));
+});
 
 gulp.task("normalize-css", function () {
   return gulp.src("node_modules/normalize.css/normalize.css")
-    .pipe(gulp.dest("source/css"))
-})
+    .pipe(gulp.dest("source/css"));
+});
+
+gulp.task("picturefill-js", function () {
+  return gulp.src("node_modules/picturefill/dist/picturefill.min.js")
+    .pipe(gulp.dest("source/js"));
+});
+
 
 gulp.task("server", function () {
   server.init({
@@ -50,4 +56,4 @@ gulp.task("server", function () {
 });
 
 
-gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "server", ));
+gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "picturefill-js", "server"));
