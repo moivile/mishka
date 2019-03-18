@@ -80,6 +80,11 @@
     padding-top: 77px;
     padding-bottom: 130px;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
 
     @include update-zigzag-height(15px);
   }
