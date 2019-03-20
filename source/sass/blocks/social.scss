@@ -21,16 +21,11 @@
 
 .social__icon {
   display: block;
+  fill: #000000;
 
-  path {
-    fill: #000000;
-  }
 
   &:hover {
-
-    path {
-      fill: #46c1ae;
-    }
+    fill: #46c1ae;
   }
 }
 
