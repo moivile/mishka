@@ -39,19 +39,14 @@
   display: block;
 
   opacity: 0.2;
-
-  path {
-    fill: #444444;
-  }
+  fill: #444444;
 }
 
 .field-set__input-text:hover+.field-set__input-icon,
 .field-set__input-text:focus+.field-set__input-icon {
   opacity: 1;
 
-  path {
-    fill: #62d1ba;
-  }
+  fill: #62d1ba;
 }
 
 .field-set--tel .field-set__input-icon {
