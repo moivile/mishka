@@ -75,10 +75,7 @@
   height: 18px;
 
   opacity: 0.2;
-
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 }
 
 
@@ -87,10 +84,7 @@
   &:hover .product-card__order-icon,
   &:focus .product-card__order-icon {
     opacity: 1;
-
-    path {
-      fill: $bg-light-aquamarine;
-    }
+    fill: $bg-light-aquamarine;
   }
 
   &:active .product-card__order-icon {
