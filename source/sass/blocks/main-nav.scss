@@ -132,10 +132,7 @@
 .main-nav__func-icon {
   position: absolute;
   opacity: 0.2;
-
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 }
 
 .main-nav__func-list-item a[href] {
@@ -143,10 +140,7 @@
   &:hover .main-nav__func-icon,
   &:focus .main-nav__func-icon {
     opacity: 1;
-
-    path {
-      fill: $bg-light-aquamarine;
-    }
+    fill: $bg-light-aquamarine;    
   }
 
   &:active .main-nav__func-icon {
