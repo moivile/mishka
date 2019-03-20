@@ -41,6 +41,11 @@ gulp.task("picturefill-js", function () {
     .pipe(gulp.dest("source/js"));
 });
 
+gulp.task("svgxuse", function () {
+  return gulp.src("node_modules/svgxuse/svgxuse.min.js")
+    .pipe(gulp.dest("source/js"));
+});
+
 
 gulp.task("server", function () {
   server.init({
@@ -56,4 +61,4 @@ gulp.task("server", function () {
 });
 
 
-gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "picturefill-js", "server"));
+gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "picturefill-js", "svgxuse", "server"));
