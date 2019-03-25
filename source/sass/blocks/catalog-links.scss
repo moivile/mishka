@@ -85,14 +85,13 @@
 }
 
 
-@media(max-width: $tablet-width - 1) {
+@media (max-width: $tablet-width - 1) {
   .catalog-links__list {
     padding: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
-
   .catalog-links {
     @include add-zigzag-to-bottom("../img/bg-zigzag-fill.svg", 22px);
   }
@@ -126,7 +125,6 @@
 
 
 @media (min-width: $desktop-width) {
-
   .catalog-links {
     @include update-zigzag-height(34px);
   }

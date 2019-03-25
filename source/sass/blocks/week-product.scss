@@ -4,6 +4,7 @@
   padding-top: 27px;
   padding-bottom: 42px;
   color: $font-light-black;
+
   @include add-zigzag-to-bottom("../img/bg-zigzag-line.svg", 6px);
 }
 

@@ -49,7 +49,7 @@
   &:hover {
     color: #46c1ae;
 
-    &:after {
+    &::after {
       background-color: #46c1ae;
     }
   }

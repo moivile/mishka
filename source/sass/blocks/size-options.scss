@@ -23,7 +23,7 @@
   }
 }
 
-.size-options__input:checked+.size-options__label {
+.size-options__input:checked + .size-options__label {
   border-color: #62d1ba;
 }
 

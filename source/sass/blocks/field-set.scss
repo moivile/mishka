@@ -42,8 +42,8 @@
   fill: #444444;
 }
 
-.field-set__input-text:hover+.field-set__input-icon,
-.field-set__input-text:focus+.field-set__input-icon {
+.field-set__input-text:hover + .field-set__input-icon,
+.field-set__input-text:focus + .field-set__input-icon {
   opacity: 1;
 
   fill: #62d1ba;
@@ -68,6 +68,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
   @include reset-list;
 }
 
@@ -96,7 +97,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
   }
 
   .field-set--color .field-set__option {

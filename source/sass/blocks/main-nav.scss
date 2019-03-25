@@ -83,6 +83,7 @@
 .main-nav__func-list {
   display: flex;
   flex-direction: column;
+
   @include reset-list;
 }
 
@@ -136,7 +137,6 @@
 }
 
 .main-nav__func-list-item a[href] {
-
   &:hover .main-nav__func-icon,
   &:focus .main-nav__func-icon {
     opacity: 1;
@@ -160,7 +160,7 @@
   display: none;
 }
 
-@media(max-width: $tablet-width - 1) {
+@media (max-width: $tablet-width - 1) {
   .main-nav {
     padding: 0;
     border-top: 1px solid #f5f5f5;
