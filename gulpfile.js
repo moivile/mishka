@@ -7,6 +7,7 @@ var postcss = require("gulp-postcss");
 var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var concat = require('gulp-concat');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -36,13 +37,9 @@ gulp.task("normalize-css", function () {
     .pipe(gulp.dest("source/css"));
 });
 
-gulp.task("picturefill-js", function () {
-  return gulp.src("node_modules/picturefill/dist/picturefill.min.js")
-    .pipe(gulp.dest("source/js"));
-});
-
-gulp.task("svgxuse", function () {
-  return gulp.src("node_modules/svgxuse/svgxuse.min.js")
+gulp.task("polyfill-js", function () {
+  return gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"])
+    .pipe(concat("polyfill.min.js"))
     .pipe(gulp.dest("source/js"));
 });
 
@@ -61,4 +58,4 @@ gulp.task("server", function () {
 });
 
 
-gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "picturefill-js", "svgxuse", "server"));
+gulp.task("start", gulp.series("css", "normalize-css", "pixel-glass-js", "pixel-glass-css", "polyfill-js", "server"));

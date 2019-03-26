@@ -40,6 +40,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "gulp-concat": "^2.6.1",
     "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",
     "svgxuse": "^1.2.6"
