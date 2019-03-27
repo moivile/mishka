@@ -13,6 +13,8 @@ const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const filter = require("gulp-filter");
+const svgstore = require("gulp-svgstore");
+const cheerio = require("gulp-cheerio");
 
 gulp.task("clean", function () {
   return del("build");
@@ -29,6 +31,15 @@ gulp.task("copy", function () {
 });
 
 gulp.task("images", function () {
+
+  const webpFilter = filter(["**", "!build/img/preview/**", "!build/img/background/**"], {
+    restore: true
+  });
+
+  const spriteSvgFilter = filter(["build/img/inline-svg/**"], {
+    restore: true
+  });
+
   return gulp.src(["source/img/**/*.{png,jpg,svg}"])
     .pipe(imagemin([imagemin.optipng({
         optimizationLevel: 3
@@ -39,13 +50,27 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
-    .pipe(filter(["**", "!build/img/preview/**", "!build/img/background/**"]))
+    .pipe(webpFilter)
     .pipe(webp({
       quality: 80
     }))
+    .pipe(webpFilter.restore)
+    .pipe(spriteSvgFilter)
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(spriteSvgFilter.restore)
     .pipe(gulp.dest("build/img"));
 });
-
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -92,8 +117,8 @@ gulp.task("polyfill-js", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
   "images",
+  "css",
   "html",
   "polyfill-js",
   "pixel-glass-js",
