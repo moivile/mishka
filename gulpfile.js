@@ -70,7 +70,6 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "html",
-  "normalize-css",
   "polyfill-js",
   "pixel-glass-js",
   "pixel-glass-css"
