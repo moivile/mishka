@@ -1,14 +1,15 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var rename = require("gulp-rename");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-var concat = require('gulp-concat');
-var del = require("del");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const plumber = require("gulp-plumber");
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
+const autoprefixer = require("autoprefixer");
+const server = require("browser-sync").create();
+const concat = require('gulp-concat');
+const del = require("del");
+const csso = require("gulp-csso");
 
 gulp.task("clean", function () {
   return del("build");
