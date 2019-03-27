@@ -10,6 +10,9 @@ const server = require("browser-sync").create();
 const concat = require('gulp-concat');
 const del = require("del");
 const csso = require("gulp-csso");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const filter = require("gulp-filter");
 
 gulp.task("clean", function () {
   return del("build");
@@ -18,13 +21,31 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
       "source/js/**"
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
 });
+
+gulp.task("images", function () {
+  return gulp.src(["source/img/**/*.{png,jpg,svg}"])
+    .pipe(imagemin([imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.jpegtran({
+        progressive: true
+      }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
+    .pipe(filter(["**", "!build/img/preview/**", "!build/img/background/**"]))
+    .pipe(webp({
+      quality: 80
+    }))
+    .pipe(gulp.dest("build/img"));
+});
+
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -72,6 +93,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "images",
   "html",
   "polyfill-js",
   "pixel-glass-js",
