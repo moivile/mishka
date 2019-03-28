@@ -8,8 +8,5 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/*.css
 Thumbs.db
-source/js/pixel-glass.js
-source/js/polyfill.min.js
 build/
