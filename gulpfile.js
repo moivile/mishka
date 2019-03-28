@@ -42,7 +42,8 @@ gulp.task("images", function () {
 
   return gulp.src(["source/img/**/*.{png,jpg,svg}"])
     .pipe(imagemin([imagemin.optipng({
-        optimizationLevel: 3
+        optimizationLevel: 1
+        // optimizationLevel: 3
       }),
       imagemin.jpegtran({
         progressive: true
@@ -52,7 +53,8 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"))
     .pipe(webpFilter)
     .pipe(webp({
-      quality: 80
+      quality: 90
+      // quality: 80
     }))
     .pipe(webpFilter.restore)
     .pipe(spriteSvgFilter)
