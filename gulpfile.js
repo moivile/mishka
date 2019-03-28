@@ -93,23 +93,22 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("pixel-glass-js", function () {
-  return gulp.src("node_modules/pixel-glass/script.js")
-    .pipe(rename("pixel-glass.js"))
-    .pipe(gulp.dest("build/js"));
-});
-
-gulp.task("pixel-glass-css", function () {
-  return gulp.src("node_modules/pixel-glass/styles.css")
-    .pipe(rename("pixel-glass.css"))
-    .pipe(gulp.dest("build/css"));
-});
-
 gulp.task("polyfill-js", function () {
   return gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"])
     .pipe(concat("polyfill.min.js"))
     .pipe(gulp.dest("build/js"));
 });
+
+gulp.task("pixel-glass", function () {
+  return gulp.src("node_modules/pixel-glass/script.js")
+    .pipe(rename("pixel-glass.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.src("node_modules/pixel-glass/styles.css"))
+    .pipe(rename("pixel-glass.css"))
+    .pipe(gulp.dest("build/css"));
+});
+
+
 
 gulp.task("build", gulp.series(
   "clean",
@@ -118,8 +117,7 @@ gulp.task("build", gulp.series(
   "css",
   "html",
   "polyfill-js",
-  "pixel-glass-js",
-  "pixel-glass-css"
+  "pixel-glass",
 ));
 
 
