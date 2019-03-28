@@ -136,10 +136,10 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "reload"));
 });
 
-gulp.task("refresh", function (done) {
+gulp.task("reload", function (done) {
   server.reload();
   done();
 });
