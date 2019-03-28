@@ -105,11 +105,6 @@ gulp.task("pixel-glass-css", function () {
     .pipe(gulp.dest("build/css"));
 });
 
-gulp.task("normalize-css", function () {
-  return gulp.src("node_modules/normalize.css/normalize.css")
-    .pipe(gulp.dest("build/css"));
-});
-
 gulp.task("polyfill-js", function () {
   return gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"])
     .pipe(concat("polyfill.min.js"))
