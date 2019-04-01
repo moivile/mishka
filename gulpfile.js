@@ -14,6 +14,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const cheerio = require("gulp-cheerio");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 gulp.task("clean", function () {
   return del("build");
@@ -21,8 +23,7 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/js/**"
+      "source/fonts/**/*.{woff,woff2}"
     ], {
       base: "source"
     })
@@ -80,13 +81,21 @@ gulp.task("css", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("polyfill", function () {
-  return gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"])
+gulp.task("js", function () {
+  return gulp.src("source/js/app.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
+    .pipe(rename("app.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"]))
     .pipe(concat("polyfill.min.js"))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("pixel-glass", function () {
@@ -106,7 +115,7 @@ gulp.task("build", gulp.series(
   "images",
   "css",
   "html",
-  "polyfill",
+  "js",
   "pixel-glass",
 ));
 

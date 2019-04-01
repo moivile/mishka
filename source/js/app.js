@@ -1,5 +1,5 @@
 // Initialize contacts block
-const contactsBlock = document.querySelector(".contacts");
+var contactsBlock = document.querySelector(".contacts");
 if (contactsBlock) {
   contactsBlock.classList.remove("contacts--nojs");
 }
