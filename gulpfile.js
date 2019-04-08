@@ -12,6 +12,7 @@ const del = require("del");
 const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const filter = require("gulp-filter");
 const svgstore = require("gulp-svgstore");
 const cheerio = require("gulp-cheerio");
 const htmlmin = require("gulp-htmlmin");
@@ -32,6 +33,14 @@ gulp.task("copy", function () {
 
 gulp.task("images", function () {
 
+  const webpFilter = filter(["**", "!build/img/preview/**", "!build/img/background/**"], {
+    restore: true
+  });
+
+  const spriteSvgFilter = filter(["build/img/inline-svg/**"], {
+    restore: true
+  });
+
   return gulp.src(["source/img/**/*.{png,jpg,svg}"])
     .pipe(imagemin([imagemin.optipng({
         optimizationLevel: 1
@@ -43,13 +52,13 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
-    .pipe(gulp.src(["build/img/**/*.{png,jpg}", "!build/img/preview/**", "!build/img/background/**"]))
+    .pipe(webpFilter)
     .pipe(webp({
       quality: 90
       // quality: 80
     }))
-    .pipe(gulp.dest("build/img"))
-    .pipe(gulp.src("build/img/inline-svg/**"))
+    .pipe(webpFilter.restore)
+    .pipe(spriteSvgFilter)
     .pipe(cheerio({
       run: function ($) {
         $('[fill]').removeAttr('fill');
@@ -62,6 +71,7 @@ gulp.task("images", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
+    .pipe(spriteSvgFilter.restore)
     .pipe(gulp.dest("build/img"));
 });
 
