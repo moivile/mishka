@@ -24,8 +24,8 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}"
-    ], {
+    "source/fonts/**/*.{woff,woff2}"
+  ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
@@ -43,13 +43,13 @@ gulp.task("images", function () {
 
   return gulp.src(["source/img/**/*.{png,jpg,svg}"])
     .pipe(imagemin([imagemin.optipng({
-        optimizationLevel: 1
-        // optimizationLevel: 3
-      }),
-      imagemin.jpegtran({
-        progressive: true
-      }),
-      imagemin.svgo()
+      optimizationLevel: 1
+      // optimizationLevel: 3
+    }),
+    imagemin.jpegtran({
+      progressive: true
+    }),
+    imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
     .pipe(webpFilter)
@@ -103,7 +103,10 @@ gulp.task("js", function () {
     .pipe(uglify())
     .pipe(rename("app.min.js"))
     .pipe(gulp.dest("build/js"))
-    .pipe(gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"]))
+});
+
+gulp.task("polyfill", function () {
+  return gulp.src(["node_modules/picturefill/dist/picturefill.min.js", "node_modules/svgxuse/svgxuse.min.js"])
     .pipe(concat("polyfill.min.js"))
     .pipe(gulp.dest("build/js"))
 });
@@ -126,7 +129,8 @@ gulp.task("build", gulp.series(
   "css",
   "html",
   "js",
-  "pixel-glass",
+  "polyfill",
+  "pixel-glass"
 ));
 
 
