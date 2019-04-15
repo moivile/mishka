@@ -1,6 +1,6 @@
 .comments {
   position: relative;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 51px;
 
   @include add-zigzag-to-bottom("../img/bg-zigzag-line.svg", 6px);
@@ -8,19 +8,19 @@
 
 .comments__heading {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-size: 25px;
   line-height: 30px;
 }
 
 .comments__list {
   @include reset-list;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 .comments__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   font-size: 15px;
   line-height: 30px;
