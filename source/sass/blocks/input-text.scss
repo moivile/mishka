@@ -1,35 +1,55 @@
 .input-text {
-  padding: 16px 0;
-  border: none;
-  border-bottom: 2px solid #000000;
-  font-size: 17px;
-  line-height: 18px;
-  color: $font-light-black;
-  font-weight: 400;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 17px;
+    line-height: 18px;
+    color: $font-light-black;
+    font-weight: 400;
 
-  &::placeholder {
-    font: inherit;
-    opacity: 0.3;
-  }
+    &::placeholder {
+        font: inherit;
+        opacity: 0.3;
+    }
 
-  &:hover,
-  &:active,
-  &:focus {
-    border-bottom-color: #62d1ba;
-    outline: none;
-  }
+    &:hover,
+    &:active,
+    &:focus {
+        border-bottom-color: #62d1ba;
+        outline: none;
+    }
 
-  &--tel {
-    font-size: 19px;
-  }
+    &--tel {
+        font-size: 19px;
+        padding-right: 41px;
+    }
+
+    &--email {
+        padding-right: 40px;
+    }
 }
 
 
 @media (min-width: $tablet-width) {
-  .input-text {
-    padding-left: 16px;
-    padding-bottom: 13px;
+    .input-text {
+        padding-left: 16px;
+        padding-bottom: 13px;
 
-    font-size: 19px;
-  }
+        font-size: 19px;
+
+        &--tel,
+        &--email {
+            padding-right: 56px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .input-text {
+
+        &--tel,
+        &--email {
+            padding-right: 40px;
+        }
+    }
 }
